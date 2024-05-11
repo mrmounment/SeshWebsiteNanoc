@@ -19,12 +19,14 @@ end
 #  layout '/default.*'
 #
 #  if item.identifier =~ '**/index.*'
-#    write item.identifier.without_ext + '.html'
+#    write item.identifier.to_s
 #  else
 #    write item.identifier.without_ext + '/index.html'
 #  end
 #end
 
-passthrough '/**/*'
+compile '/**/*' do
+  write item.identifier.to_s
+end
 
 layout '/**/*', :erb
