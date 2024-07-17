@@ -2,28 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>A Brand New Nanoc Site - <%= @item[:title] %></title>
+    <title>ShefESH</title>
     <link rel="stylesheet" href="/stylesheet.css">
 
     <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
   </head>
   <body>
-    <div id="main">
+    <header>
+      <img src="[]" alt="">
+      <h1>Sheffield Ethical Student Hackers</h1>
+      <nav>
+        <ul>
+          <li><a href="[]">Home</a></li>
+          <li><a href="[]">Sessions</a></li>
+          <li><a href="[]">Committee</a></li>
+          <li><a href="[]">Contact</a></li>
+          <li><a href="[]">Join Us</a></li>
+          <li><a href="[]">Careers</a></li>
+          <li><a href="[]">Wiki</a></li>
+        </ul>
+      </nav>
+    </header>
+      <div id="main">
       <%= yield %>
     </div>
-    <div id="sidebar">
-      <h2>Documentation</h2>
-      <ul>
-        <li><a href="https://nanoc.ws/doc/">Documentation</a></li>
-        <li><a href="https://nanoc.ws/doc/tutorial/">Tutorial</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion group</a></li>
-        <li><a href="https://gitter.im/nanoc/nanoc">Gitter channel</a></li>
-        <li><a href="https://nanoc.ws/contributing/">Contributing</a></li>
-      </ul>
+  <footer>
+      <div class="footer-column">
+        <img href="images/shefesh.png" alt="ShefEsh Logo" style="width: 100%; height: auto;">
+        <p>Sheffied Ethical Student Hackers © 2023</p>
+      </div>
+    <div class="footer-column">
+      
     </div>
+    <div class="footer-column">
+      <h3>About ShefESH</h3>
+      <p>A society dedicated to hands-on cyber security and ethical hacking. We have sessions every Monday at 18:00-19:30. Join us <a href='[insert]'>Here!</a></p>
+      <ul>
+        <li><a href="[insert]">Discord</a></li>
+        <li><a href="[insert]">GitHub</a></li>
+        <li><a href="[insert]">LinkTree</a></li> 
+      </ul>
+    </div> 
+  </footer>
   </body>
 </html>
