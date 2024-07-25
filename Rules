@@ -1,5 +1,17 @@
 #!/usr/bin/env ruby
 
+compile '/basic_pages/index.md' do
+  filter :kramdown
+  layout "/basic.erb"
+  write "/index.html"
+end
+
+compile '/basic_pages/contact.md' do
+  filter :kramdown
+  layout "/basic.erb"
+  write "/contact/index.html"
+end
+
 compile '/public/**/*' do
     write item.identifier.to_s.sub("public/", "")
 end
@@ -7,3 +19,7 @@ end
 compile '/**/*' do
    # Fallback rule to catch and ignore anything not covered above
 end
+
+
+# Use ERB for ERB files
+layout '/**/*.erb', :erb
