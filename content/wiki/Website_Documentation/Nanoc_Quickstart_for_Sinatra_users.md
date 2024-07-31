@@ -68,7 +68,7 @@ bundle exec nanoc view
 
 to start a temporary web server which allows you to view the site.
 
-All being well, you should be able to navigate to the correct IP address in a web browser and view the site.
+All being well, you should be able to navigate to the correct IP address in a web browser and view the site. The path of this page will be "/wiki/Website_Documentation/Nanoc_Quickstart_for_Sinatra_users"
 
 ## A note about rerun
 
