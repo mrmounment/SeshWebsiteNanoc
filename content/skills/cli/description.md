@@ -1,0 +1,1 @@
+You should be comfortable using the command line for this session.
