@@ -7,12 +7,14 @@
         <section id="acad-year-<%= yeardir %>">
             <h2>Academic Year <%= yearname %></h2>
             <% @items.find_all("/acad_years/#{yeardir}/sessions/**/session.md").sort{|s1, s2| s1.date <=> s2.date}.each do |session| %>
-                <h3><%= session[:title] %></h3>
-                <%= session_location_link session %>
-                <p class="session-description">
-                    <%= md_to_html session.raw_content %>
-                </p>
-                <%= session_dependencies session %>
+                <article class="session-card">
+                    <h3><%= session[:title] %></h3>
+                    <%= session_location_link session %>
+                    <p class="session-description">
+                        <%= md_to_html session.raw_content %>
+                    </p>
+                    <%= session_dependencies session %>
+                </article>
             <% end %>
         </section>
 <% end %>

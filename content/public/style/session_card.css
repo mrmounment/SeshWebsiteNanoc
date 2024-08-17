@@ -1,0 +1,4 @@
+.session-card {
+    background-color: var(--card-background);
+    color: var(--card-text);
+}
