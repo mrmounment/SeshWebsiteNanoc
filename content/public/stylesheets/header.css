@@ -1,0 +1,26 @@
+.HoverHidden{display: none;}
+
+li{
+    display: inline-block;
+}
+
+#Careers:hover{
+    #careerHide{display: block;}
+}
+
+#Wiki:hover{
+    #wikiHide{display: block;}
+}
+
+@media (pointer: coarse){
+    .HoverHidden{display: block;}
+}
+
+/* changing nav menu to mobile version */
+@media screen and (max-width: 600px){
+    #nav{
+        text-align: center;
+        justify-content: center;
+    }
+
+}
