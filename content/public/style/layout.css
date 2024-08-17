@@ -1,0 +1,8 @@
+main {
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 3px solid var(--shefesh-accent);
+    border-right: 3px solid var(--shefesh-accent);
+    padding: 32px;
+    max-width: 160ch;
+}
