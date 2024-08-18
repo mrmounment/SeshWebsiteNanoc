@@ -1,5 +1,6 @@
 ---
 role: Publicity Officer
+priority: 2
 name: Echo
 bio: Echo is a 2nd year Software Engineering student.
 image: echo.jpg
