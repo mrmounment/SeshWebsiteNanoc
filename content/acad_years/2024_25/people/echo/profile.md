@@ -1,9 +1,9 @@
 ---
 id: echo
-role: Publicity Officer
-priority: 2
+role: President
+priority: 0
 name: Echo
-bio: Echo is a 1st year Software Engineering student.
+bio: Echo is a 2nd year Software Engineering student.
 image: echo.jpg
 contact: Contact them on 
 contact-name: linkedin.png 

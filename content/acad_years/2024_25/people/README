@@ -1,0 +1,7 @@
+This directory will contain a load of subdirectories, each representing a person involved with the society in the relevant academic year. Mostly for members of the committee but maybe also for guest speakers?
+
+
+priority:
+0 -> president
+1 -> core
+2 -> other
