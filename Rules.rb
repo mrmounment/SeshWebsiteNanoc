@@ -9,9 +9,10 @@ compile '/basic_pages/index.md' do
 end
 
 compile '/basic_pages/*.md' do
+  file_name = File.basename(item.identifier,File.extname(item.identifier))
   filter :kramdown
   layout "/basic.erb"
-  write "/"+File.basename(item.identifier,File.extname(item.identifier))+"/index.html"
+  write "/"+file_name+"/index.html"
 end
 
 # Now evaluate every rule from the src directory
