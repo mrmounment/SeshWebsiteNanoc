@@ -1,9 +1,8 @@
 ---
-layout: default
 role: Publicity Officer
 name: Echo
 bio: Echo is a 2nd year Software Engineering student.
-image-name: echo.jpg
+image: echo.jpg
 contact: Contact them on 
 contact-name: linkedin.png 
 contact-link: https://www.linkedin.com/in/echo-garratt-12a007236/

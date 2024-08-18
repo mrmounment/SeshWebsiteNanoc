@@ -1,0 +1,13 @@
+<h2>Committee <%= @year %></h2>
+
+<% @committee.each do |member| %>
+
+<div class="committee-card">
+    <ul>
+        <li>Role: <%=@member.role%></li>
+        <li>Name: <%=@member.name%></li>
+        <li><%=@member.bio%></li>
+        <li><img src="<%=@member.image%>" alt="A photo of <%=@member.name%>">
+    </ul>
+
+<% end %>
