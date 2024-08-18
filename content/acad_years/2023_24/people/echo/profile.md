@@ -1,4 +1,5 @@
 ---
+id: echo
 role: Publicity Officer
 priority: 2
 name: Echo

@@ -9,7 +9,7 @@
             <li>Role: <%= member[:role] %></li>
             <li>Name: <%= member[:role] %></li>
             <li><%= member[:bio] %></li>
-            <li><img src="<%= member[:image] %>" alt="A photo of <%= member[:name] %>">
+            <li><img src="<%="/acad_years/#{yeardir}/people/#{member[:id]}/#{member[:image]}"%>" alt="A photo of <%= member[:name] %>">
         </ul>
     </div>
 <% end %>
