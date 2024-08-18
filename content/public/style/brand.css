@@ -5,12 +5,11 @@
 
     --shefesh-accent: #A21135;
 
-    --body-background: #D8F8F8;
+    --body-background: #EEFBFB;
     --body-text: #1C1E29;
 
     --card-background: #8AE5E5;
     --card-text: #1C1E29;
-
 
     --header-background: #33354b;
     --header-text: white;
@@ -30,8 +29,8 @@
         --body-background: #1C1E29;
         --body-text: white;
 
-        --card-background: #33354b;
-        --card-text: white;
+        --card-background: #DEF7F7;
+        --card-text: black;
     }
 }
 
@@ -41,7 +40,13 @@ body {
     font-family: var(--standard-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
+header {
+    --shefesh-accent: #FC83A1;
+    background-color: var(--header-background);
+    color: var(--header-text);
+}
+
+:not(header, footer) :is(h1, h2, h3, h4, h5, h6) {
     font-weight: 900;
     font-family: var(--title-font);
     color: var(--shefesh-accent);
@@ -51,3 +56,4 @@ a {
     font-weight: bold;
     color: var(--shefesh-accent);
 }
+
