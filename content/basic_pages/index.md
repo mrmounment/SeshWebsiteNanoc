@@ -2,7 +2,6 @@
 <img src="/logos/logo.png" alt="Sheffield Ethical Student Hackers logo">
 
 
-
 ### We deliver regular sessions covering a variety of cybersecurity topics
 We'll teach you all the theory, including <span class="highlight">web application attacks</span> and <span class="highlight">buffer overflows</span>.
 
