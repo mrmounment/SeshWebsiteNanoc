@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 ## Sheffield Ethical Student Hackers
 <img src="/logos/logo.png" alt="Sheffield Ethical Student Hackers logo">
 
