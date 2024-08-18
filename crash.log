@@ -1,52 +1,33 @@
-Crashlog created at 2024-08-17 15:37:29 +0100
+Crashlog created at 2024-08-18 12:59:38 +0100
 
 ===== MESSAGE:
 
-SyntaxError: lib/sessions_helper.rb:24: syntax error, unexpected backslash, expecting ')'
-                "}.join(\"\n\")}
-                        ^
+SyntaxError: item /basic_pages/sessions.erb (rep default):15: syntax error, unexpected ')'
+...ate].strftime("%a %d %b %Y"). ).to_s); _erbout.<< "\n       ...
+...                              ^
+
+===== ITEM BEING COMPILED:
+
+Current item: /basic_pages/sessions.erb (:default representation)
 
 ===== STACK TRACE:
 
-  0. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/code_snippet.rb:46:in `eval'
-  1. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/code_snippet.rb:46:in `load'
-  2. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/site_loader.rb:32:in `each'
-  3. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/site_loader.rb:32:in `site_from_config'
-  4. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/site_loader.rb:9:in `new_from_cwd'
-  5. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/command_runner.rb:60:in `load_site'
-  6. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/commands/compile.rb:35:in `run_once'
-  7. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/commands/compile.rb:23:in `run'
-  8. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/command_runner.rb:15:in `block in call'
-  9. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/error_handler.rb:15:in `block in handle_while'
-  10. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
-  11. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
-  12. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/command_runner.rb:14:in `call'
-  13. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/cri-2.15.12/lib/cri/command_dsl.rb:294:in `block in runner'
-  14. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/cri-2.15.12/lib/cri/command.rb:362:in `run_this'
-  15. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/cri-2.15.12/lib/cri/command.rb:298:in `run'
-  16. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/cri-2.15.12/lib/cri/command.rb:316:in `run'
-  17. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli.rb:88:in `block in run'
-  18. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/error_handler.rb:15:in `block in handle_while'
-  19. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
-  20. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
-  21. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-cli-4.12.5/lib/nanoc/cli.rb:86:in `run'
-  22. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-4.12.5/bin/nanoc:18:in `<top (required)>'
-  23. /home/jason/.rbenv/versions/3.2.2/bin/nanoc:25:in `load'
-  24. /home/jason/.rbenv/versions/3.2.2/bin/nanoc:25:in `<top (required)>'
-  25. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/cli/exec.rb:58:in `load'
-  26. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/cli/exec.rb:58:in `kernel_load'
-  27. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/cli/exec.rb:23:in `run'
-  28. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/cli.rb:455:in `exec'
-  29. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
-  30. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
-  31. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/vendor/thor/lib/thor.rb:527:in `dispatch'
-  32. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/cli.rb:35:in `dispatch'
-  33. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
-  34. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/cli.rb:29:in `start'
-  35. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/exe/bundle:28:in `block in <top (required)>'
-  36. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
-  37. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.5.16/exe/bundle:20:in `<top (required)>'
-  38. /home/jason/.rbenv/versions/3.2.2/bin/bundle:25:in `load'
+  0. /home/jason/.rbenv/versions/3.2.2/lib/ruby/3.2.0/erb.rb:429:in `eval'
+  1. /home/jason/.rbenv/versions/3.2.2/lib/ruby/3.2.0/erb.rb:429:in `result'
+  2. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-4.12.5/lib/nanoc/filters/erb.rb:32:in `run'
+  3. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/filter.rb:188:in `setup_and_run'
+  4. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/executor.rb:22:in `filter'
+  5. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
+  6. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/action_sequence.rb:50:in `block in each'
+  7. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/action_sequence.rb:50:in `each'
+  8. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/action_sequence.rb:50:in `each'
+  9. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
+  10. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  11. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  12. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/compilation_phases/cache.rb:28:in `run'
+  13. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  14. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  15. /home/jason/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/nanoc-core-4.12.5/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
 
 ===== VERSION INFORMATION:
 

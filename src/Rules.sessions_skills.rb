@@ -9,3 +9,9 @@ compile '/basic_pages/sessions.erb' do
   layout "/basic.erb"
   write "/sessions/index.html"
 end
+
+ignore '/acad_years/*/sessions/*/session.md'
+
+compile '/acad_years/*/sessions/*/*' do
+  write @item.identifier.to_s
+end

@@ -8,11 +8,12 @@ end
 
 def session_dependencies(item)
     depends = item.fetch(:depends, [])
-    return "<div class=\"session-dependencies\"><p>This session should be accessible without any prerequisites</p></div>" if depends.empty?
+    return "<div class=\"session-dependencies\"><p>This session should be accessible without any prerequisites.</p></div>" if depends.empty?
 
     "<div class=\"session-dependencies\">
         <details>
-            <summary>Session prerequisites
+            <summary>
+                <h4>Session prerequisites</h4>
                 #{depends.map{|d| "<img src=\"/skill_icons/#{d}.png\">"}.join}
             </summary>
             <ol>
@@ -22,7 +23,31 @@ def session_dependencies(item)
                     <p>#{md_to_html items["/skills/#{d}/description.md"].raw_content}</p>
                 </li>
                 "}.join}
-            <ol>
+            </ol>
     </div>"
 
+end
+
+def session_files(item)
+    directory = File.dirname(item.raw_filename)
+    files = Dir.children(directory) - ["session.md"]
+    return "<p>There are no files associated with this session.</p>" if files.empty?
+    "<div>
+        <details>
+            <summary><h4>Session files</h4></summary>
+            <ol>
+                #{files.map{|f| 
+                    "<li><img src='/icons/file.svg' alt='Download'><a href='#{File.join(File.dirname(item.identifier.to_s), f)}'>#{f}</a></li>"
+}.join}
+            </ol>
+        </details>
+    </div>"
+end
+
+def session_difficulty_description(number)
+    case number
+        when 1 then "Beginner"
+        when 2 then "Intermediate"
+        when 3 then "Expert"
+    end
 end
