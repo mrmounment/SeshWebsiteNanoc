@@ -8,10 +8,10 @@ compile '/basic_pages/index.md' do
   write "/index.html"
 end
 
-compile '/basic_pages/contact.md' do
+compile '/basic_pages/*.md' do
   filter :kramdown
   layout "/basic.erb"
-  write "/contact/index.html"
+  write "/"+File.basename(item.identifier,File.extname(item.identifier))+"/index.html"
 end
 
 # Now evaluate every rule from the src directory

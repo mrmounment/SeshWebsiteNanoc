@@ -4,9 +4,13 @@ rb_semver = File.read('.ruby-version').split('.')
 
 ruby "~> #{rb_semver[0]}.#{rb_semver[1]}.0"
 
+
+group 'nanoc' do
+  gem 'nanoc-live'
+end
+
 gem 'adsf'
-gem 'nanoc'
+gem 'nanoc', "~> 4.13"
 gem 'kramdown'
 gem 'erb'
 
-gem "nanoc-live", "~> 1.1"
