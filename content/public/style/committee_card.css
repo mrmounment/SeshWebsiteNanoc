@@ -1,0 +1,37 @@
+.committee-card {
+    background-color: var(--card-background);
+    color: var(--card-text);
+    box-shadow: 8px 0 8px rgba(0,0,0,0.25), -8px 0 8px rgba(0,0,0,0.25);
+    border-radius: 24px;
+    padding: 16px;
+    margin: 16px 0 16px 0;
+    height: 60%;
+}
+
+.committee-card img {
+    max-width: 30%;
+}
+
+.committee-card li {
+    display: inline-block;
+}
+
+
+.committee-inner {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.committee-list, .committee-img {
+
+    float: left;
+    width: 50%;
+}
+
+.committee-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+}
