@@ -1,0 +1,36 @@
+<% yeardir = acad_years.first %>
+<% prioryears = acad_years.each%>
+<% yearname = yeardir.gsub "_", "/" %>
+
+<h2>Committee <%= yearname %>:</h2>
+
+<% @items.find_all("/acad_years/#{yeardir}/people/**/profile.md").sort{|s1, s2| s2[:priority] <=> s1[:priority]}.each do |member| %>
+    <div class="committee-card">
+        <ul>
+            <li>Role: <%= member[:role] %></li>
+            <li>Name: <%= member[:name] %></li>
+            <li><%= member[:bio] %></li>
+            <li><img src="<%="/acad_years/#{yeardir}/people/#{member[:id]}/#{member[:image]}"%>" alt="A photo of <%= member[:name] %>">
+        </ul>
+    </div>
+<% end %>
+
+
+<h2>Previous Committees</h2>
+<% @acad_years[1..-1].each do |year| %>
+    <% yeardir = year %>
+    <% yearname = yeardir.gsub "_", "/" %>
+
+    <h3>Committee <%= yearname %>:</h3>
+
+    <% @items.find_all("/acad_years/#{yeardir}/people/**/profile.md").sort{|s1, s2| s2[:priority] <=> s1[:priority]}.each do |member| %>
+        <div class="committee-card">
+            <ul>
+                <li>Role: <%= member[:role] %></li>
+                <li>Name: <%= member[:name] %></li>
+                <li><%= member[:bio] %></li>
+                <li><img src="<%="/acad_years/#{yeardir}/people/#{member[:id]}/#{member[:image]}"%>" alt="A photo of <%= member[:name] %>">
+            </ul>
+        </div>
+    <% end %>
+<% end %>
