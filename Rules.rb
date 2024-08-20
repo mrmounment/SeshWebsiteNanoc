@@ -1,5 +1,12 @@
 #!/usr/bin/env ruby
 
+# Check everything
+preprocess do
+  Dir.glob("src/Checks.*.rb") do |file|
+    eval(File.read(file))
+  end
+end
+
 acad_years = Dir.children("content/acad_years").select{|c| /^\d{4}_\d{2,4}$/.match? c}
 
 compile '/basic_pages/index.md' do
