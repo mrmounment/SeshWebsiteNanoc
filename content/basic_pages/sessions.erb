@@ -16,7 +16,7 @@
                         </li>
                         <li>
                             <img src="/icons/time.svg" alt="Time:">
-                            <%= session[:time] %>
+                            <%= session[:'start-time'] - session[:'end-time'] %>
                         </li>
                         <li data-difficulty="<%= session[:difficulty] %>">
                             <%= session_difficulty_description session[:difficulty] %>
