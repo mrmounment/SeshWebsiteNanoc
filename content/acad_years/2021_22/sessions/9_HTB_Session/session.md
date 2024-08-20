@@ -3,8 +3,8 @@ title: HTB Session
 date: 2022-04-04
 presenter: TBD
 online-session: true
-start-time: 19:00
-end-time: 20:30
+start-time: "19:00"
+end-time: "20:30"
 difficulty: 0
 depends: ['htb']
 ---

@@ -4,8 +4,8 @@ date: 2024-03-04
 presenter: SESH and CompSoc
 building: the-diamond
 room: Computer Room 5
-start-time: 18:00
-end-time: 19:30
+start-time: "18:00"
+end-time: "19:30"
 difficulty: 1
 ---
 Containerisation is a very commonly used technology in industry for both infrastructure and software development. 

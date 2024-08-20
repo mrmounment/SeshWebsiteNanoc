@@ -4,8 +4,8 @@ date: 2022-02-14
 presenter: Mac
 building: the-diamond
 room: Workroom 2
-start-time: 19:00
-end-time: 20:30
+start-time: "19:00"
+end-time: "20:30"
 depends: ["cli", "kali"]
 difficulty: 2
 ---

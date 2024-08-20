@@ -4,8 +4,8 @@ date: 2022-03-07
 presenter: Vlad Cranga
 building: the-diamond
 room: Workroom 2
-start-time: 19:00
-end-time: 20:30
+start-time: "19:00"
+end-time: "20:30"
 difficulty: 2
 ---
 

@@ -3,8 +3,8 @@ title: Red Teamers's viewpoint
 date: 2022-05-02
 presenter: Jack
 online-session: true
-start-time: 19:00
-end-time: 20:00
+start-time: "19:00"
+end-time: "20:00"
 difficulty: 0
 ---
 

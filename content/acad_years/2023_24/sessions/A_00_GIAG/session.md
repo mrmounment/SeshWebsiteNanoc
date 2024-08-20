@@ -4,8 +4,8 @@ date: 2023-09-20
 presenter: James
 building: pam-liversidge
 room: Design Studio 1 (Floor D)
-start-time: 16:00
-end-time: 17:30
+start-time: "16:00"
+end-time: "17:30"
 difficulty: 1
 
 ---

@@ -3,8 +3,8 @@ title: Blue Teamers's viewpoint
 date: 2022-05-09
 presenter: John
 online-session: true
-start-time: 19:00
-end-time: 20:30
+start-time: "19:00"
+end-time: "20:30"
 difficulty: 0
 ---
 

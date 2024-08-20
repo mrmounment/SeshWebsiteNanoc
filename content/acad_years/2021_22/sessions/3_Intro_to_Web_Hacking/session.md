@@ -2,8 +2,8 @@
 title: Intro to Web Hacking
 date: 2021-10-04
 presenter: Nicki Ridsdale, Sebastian Southwell
-start-time: 19:00
-end-time: 20:30
+start-time: "19:00"
+end-time: "20:30"
 building: arts-tower
 room: Workroom 3
 difficulty: 1

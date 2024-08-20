@@ -4,8 +4,8 @@ date: 2021-09-29
 presenter: Nicki & Mac
 building: students-union
 room: Gallery Room 3
-start-time: 19:00
-end-time: 20:30
+start-time: "19:00"
+end-time: "20:30"
 difficulty: 1
 ---
 

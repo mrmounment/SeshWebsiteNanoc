@@ -4,8 +4,8 @@ date: 2024-02-26
 presenter: James
 building: the-diamond
 room: Computer Room 5
-start-time: 18:00
-end-time: 19:30
+start-time: "18:00"
+end-time: "19:30"
 difficulty: 2
 depends: ['anylinux']
 ---

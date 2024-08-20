@@ -4,8 +4,8 @@ date: 2021-09-30
 presenter: Nick Ruffles, Vlad Cranga
 building: students-union
 room: Gallery Room 3
-start-time: 19:00
-end-time: 20:00
+start-time: "19:00"
+end-time: "20:00"
 difficulty: 1
 depends: ['kali']
 ---

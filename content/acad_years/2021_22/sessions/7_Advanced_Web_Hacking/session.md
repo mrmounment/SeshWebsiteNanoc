@@ -3,8 +3,8 @@ title: Advanced Web Hacking
 date: 2022-03-21
 presenter: TBD
 online-session: true
-start-time: 19:00
-end-time: 20:30
+start-time: "19:00"
+end-time: "20:30"
 difficulty: 2
 ---
 

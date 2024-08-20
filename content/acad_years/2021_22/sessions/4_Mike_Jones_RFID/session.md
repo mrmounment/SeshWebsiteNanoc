@@ -3,8 +3,8 @@ title: Mike Jones RFID
 date: 2022-02-28
 presenter: Mike Jones
 online-session: true
-start-time: 19:00
-end-time: 20:30
+start-time: "19:00"
+end-time: "20:30"
 difficulty: 1
 ---
 

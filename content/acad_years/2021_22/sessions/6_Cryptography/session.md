@@ -2,8 +2,8 @@
 title: Cryptography
 date: 2022-03-14
 presenter: Rong
-start-time: 19:00
-end-time: 20:30
+start-time: "19:00"
+end-time: "20:30"
 room: Workroom 2
 building: the-diamond
 difficulty: 0

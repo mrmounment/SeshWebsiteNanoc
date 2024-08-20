@@ -4,8 +4,8 @@ date: 2023-11-06
 presenter: Echo
 building: hicks-building
 room: Lecture Theatre 10
-start-time: 18:00
-end-time: 19:30
+start-time: "18:00"
+end-time: "19:30"
 difficulty: 2
 requirements:
 dependencies:

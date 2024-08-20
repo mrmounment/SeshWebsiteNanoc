@@ -4,8 +4,8 @@ date: 2023-09-22
 presenter: James
 room: Computer Room
 building: north-campus
-start-time: 10:00
-end-time: 12:00
+start-time: "10:00"
+end-time: "12:00"
 difficulty: 1
 ---
 
