@@ -1,1 +1,1 @@
-You should be comfortable using the command line for this session.
+You should be comfortable using the Linux command line for this session.

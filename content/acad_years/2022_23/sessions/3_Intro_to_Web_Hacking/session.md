@@ -5,5 +5,6 @@ presenter: Sebastian Southwell & Mac Goodwin
 start-time: "19:00"
 end-time: "20:30"
 difficulty: 1
+online-session: true
 ---
 Our first session on web hacking methodologies, tools, and simple attacks.
