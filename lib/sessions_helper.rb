@@ -22,7 +22,7 @@ def session_dependencies(item)
                 #{depends.map{|d| "<img src=\"/skill_icons/#{d}.png\">"}.join}
             </summary>
             <ol>
-                #{depends.map{|d| puts d;
+                #{depends.map{|d|
                 "<li>
                     <img src=\"/skill_icons/#{d}.png\">
                     <p>#{md_to_html items["/skills/#{d}/description.md"].raw_content}</p>
