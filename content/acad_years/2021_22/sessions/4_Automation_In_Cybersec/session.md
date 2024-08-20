@@ -2,14 +2,12 @@
 title: Automation in Cyber Security
 date: 2021-10-11
 presenter: Mac and Seb
-type: PDF
-file-name: Automation in Cybersecurity.pdf
-location: Arts Tower workroom 3
-time: "7pm - 8:30pm"
-sessionRef: 2021Autumn5
-<!-- Difficulties: TBD = 0 ,Easy = 1, Medium = 2, Hard = 3 -->
+start-time: 19:00
+end-time: 20:30
+building: arts-tower
+room: Workroom 3
 difficulty: 1
-
+depends: ['anylinux', 'pyselenium']
 requirements:
     - software:
         - ref: https://pypi.org/project/selenium/

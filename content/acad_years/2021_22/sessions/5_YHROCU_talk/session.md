@@ -2,12 +2,10 @@
 title: Yorkshire & Humber Regional Organised Crime Unit talk
 date: 2021-10-18
 presenter: DS Spinks
-type: PDF
-file-name:
-location: Hicks Building LT05
-time: "7pm - 8:30pm"
-sessionRef: 2021Autumn6
-<!-- Difficulties: TBD = 0 ,Easy = 1, Medium = 2, Hard = 3 -->
+building: hicks-building
+room: Lecture Theatre 5
+start-time: 19:00
+end-time: 20:30
 difficulty: 1
 ---
 
