@@ -54,5 +54,6 @@ def session_difficulty_description(number)
         when 1 then "Beginner"
         when 2 then "Intermediate"
         when 3 then "Expert"
+        else "Unknown difficulty"
     end
 end
