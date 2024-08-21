@@ -21,7 +21,6 @@
                         <li data-difficulty="<%= session[:difficulty] %>">
                                 <%= session_difficulty_description session.fetch(:difficulty, 0) %>
                         </li>
-                        <% end %>
                         <li>
                             <img src="/icons/person.svg" alt="Presenter:">
                             <% if session.fetch(:presenter, false) %>
