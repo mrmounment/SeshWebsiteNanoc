@@ -8,4 +8,6 @@ gem 'adsf'
 gem 'nanoc'
 gem 'kramdown'
 
-gem "nanoc-live", "~> 1.1"
+group 'nanoc' do
+    gem 'nanoc-live'
+end

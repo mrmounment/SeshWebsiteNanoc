@@ -18,12 +18,18 @@
                             <img src="/icons/time.svg" alt="Time:">
                             <%= session[:'start-time'] %> - <%= session[:'end-time'] %>
                         </li>
-                        <li data-difficulty="<%= session[:difficulty] %>">
-                            <%= session_difficulty_description session[:difficulty] %>
-                        </li>
+                        <% if session.fetch(:difficulty, false) %>
+                            <li data-difficulty="<%= session[:difficulty] %>">
+                                <%= session_difficulty_description session[:difficulty] %>
+                            </li>
+                        <% end %>
                         <li>
                             <img src="/icons/person.svg" alt="Presenter:">
-                            <%= session[:presenter] %>
+                            <% if session.fetch(:presenter, false) %>
+                                <%= session[:presenter] %>
+                            <% else %>
+                                TBC
+                            <% end %>
                         </li>
                         <li>
                             <img src="/icons/location.svg" alt="Location:">

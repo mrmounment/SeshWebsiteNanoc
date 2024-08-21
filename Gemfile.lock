@@ -102,7 +102,7 @@ DEPENDENCIES
   adsf
   kramdown
   nanoc
-  nanoc-live (~> 1.1)
+  nanoc-live
 
 RUBY VERSION
    ruby 3.2.2p53
