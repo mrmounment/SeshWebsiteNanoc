@@ -110,21 +110,6 @@
     border-bottom-right-radius: 8px;
 }
 
-.session-chips li[data-difficulty="1"] {
-    background-color: darkgreen;
-    color: white;
-}
-
-.session-chips li[data-difficulty="2"] {
-    background-color: darkgoldenrod;
-    color: black;
-}
-
-.session-chips li[data-difficulty="3"] {
-    background-color: darkred;
-    color: white;
-}
-
 .session-card h3 {
     display: flex;
     justify-content: left;
@@ -139,4 +124,20 @@
     .session-card h3 a img {
         filter: invert();
     }    
+}
+
+
+.session-chips li[data-difficulty="B"] {
+    background-color: darkgreen;
+    color: white;
+}
+
+.session-chips li[data-difficulty="I"] {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+.session-chips li[data-difficulty="X"] {
+    background-color: darkred;
+    color: white;
 }

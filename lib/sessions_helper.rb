@@ -51,9 +51,9 @@ end
 
 def session_difficulty_description(number)
     case number
-        when 1 then "Beginner"
-        when 2 then "Intermediate"
-        when 3 then "Expert"
+        when "B" then "Beginner"
+        when "I" then "Intermediate"
+        when "X" then "Expert"
         else "Unknown difficulty"
     end
 end
