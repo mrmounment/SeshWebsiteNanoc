@@ -44,6 +44,10 @@ The time at which this session will end, in the format "_HH_:_MM_" (24 hour cloc
 
 **You must enclose the time in quotes**. If you don't, the colon will play havoc with the YAML parser and the output will be wrong.
 
+### online-session
+
+Set "online-session: true" to display "Online session" in place of the building and room number.
+
 ### presenter
 
 The name of the person who will be presenting this session.
@@ -57,3 +61,9 @@ The name of the room this session will take place in.
 The time at which this session will start, in te format "_HH:MM_" (24 hour clock).
 
 **You must enclose the time in quotes**. If you don't, the colon will play havoc with the YAML parser and the output will be wrong.
+
+## Attaching files
+
+Any file in the session directory other than _session.md_ will be copied verbatim, and appear with the session under "session files".
+
+As a minimum, you should use this to attach a PDF copy of the session slides. You may also wish to attach additional documents, such as solution sheets or resources that will be needed during the session.
