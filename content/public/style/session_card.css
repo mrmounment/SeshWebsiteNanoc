@@ -124,3 +124,19 @@
     background-color: darkred;
     color: white;
 }
+
+.session-card h3 {
+    display: flex;
+    justify-content: left;
+}
+
+.session-card h3 a img {
+    height: 1.5em;
+    margin-right: 0.25em;
+}
+
+@media (prefers-color-scheme: dark) {
+    .session-card h3 a img {
+        filter: invert();
+    }    
+}

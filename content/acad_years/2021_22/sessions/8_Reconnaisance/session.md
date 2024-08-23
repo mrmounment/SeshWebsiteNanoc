@@ -7,7 +7,7 @@ room: Lecture Theatre 6
 time: "7pm - 8:30pm"
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 1
+difficulty: B
 depends: ["cli", "kali"]
 ---
 

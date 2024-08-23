@@ -5,7 +5,7 @@ presenter: Chloe & Sohyun
 online-session: true
 start-time: "18:00"
 end-time: "20:00"
-difficulty: 1
+difficulty: B
 ---
 
 Open Source Intelligence and social engineering are often one of the most important parts of cyber attacks and defense. Join us to learn about various tools and take part in a CTF. 

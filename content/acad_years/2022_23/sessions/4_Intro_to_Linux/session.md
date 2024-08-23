@@ -6,7 +6,7 @@ building: hicks-building
 room: K14
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 1
+difficulty: B
 ---
 
 An introduction to Unix-based operating systems and the tools you will use as an ethical hacker

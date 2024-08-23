@@ -6,7 +6,7 @@ building: students-union
 room: Gallery Room 3
 start-time: "19:00"
 end-time: "20:00"
-difficulty: 1
+difficulty: B
 depends: ['kali']
 ---
 

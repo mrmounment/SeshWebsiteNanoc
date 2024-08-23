@@ -5,7 +5,7 @@ presenter: TBD
 online-session: true
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 0
+difficulty: null
 depends: ['htb']
 ---
 

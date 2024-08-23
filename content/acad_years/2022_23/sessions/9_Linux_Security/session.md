@@ -7,7 +7,7 @@ building: the-diamond
 room: Workroom 1
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 2
+difficulty: I
 
 ---
 

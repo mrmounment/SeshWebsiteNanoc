@@ -6,6 +6,6 @@ building: the-diamond
 room: Computer Room 5
 start-time: "18:00"
 end-time: "19:30"
-difficulty: 1
+difficulty: B
 ---
 Learning about email security and phishing.

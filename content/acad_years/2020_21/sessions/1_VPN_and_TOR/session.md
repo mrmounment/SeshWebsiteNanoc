@@ -5,7 +5,7 @@ presenter: Mac and Brooks
 online-session: true
 start-time: "18:00"
 end-time: "20:00"
-difficulty: 1
+difficulty: B
 ---
 
 A look at the technologies behind VPNs and Tor, their vulnerabilities, and how to setup your own.

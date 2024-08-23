@@ -6,7 +6,7 @@ room: Workroom 1
 building: the-diamond
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 2
+difficulty: I
 depends: ['cli', 'kali']
 ---
 

@@ -6,7 +6,7 @@ building: hicks-building
 room: Lecture Theatre 4
 start-time: "14:00"
 end-time: "16:00"
-difficulty: 1
+difficulty: B
 ---
 
 Our Web Hacking Give it a Go session, where we'll teach you some basic Web Application attacks and methodologies!

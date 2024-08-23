@@ -5,7 +5,7 @@ presenter: Mac Goodwin
 online-session: true
 start-time: "18:00"
 end-time: "20:00"
-difficulty: 3
+difficulty: X
 ---
 
 Our bakery-themed CTF, featuring challenges for players of all skill levels, and a chance to win a Raspberry Pi and a SESH hoodie!

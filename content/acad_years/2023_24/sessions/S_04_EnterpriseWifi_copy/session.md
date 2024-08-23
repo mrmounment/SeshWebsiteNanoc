@@ -6,7 +6,7 @@ building: the-diamond
 room: Computer Room 5
 start-time: "18:00"
 end-time: "19:30"
-difficulty: 2
+difficulty: I
 depends: ['anylinux']
 ---
 Enterpise Wifi networks (such as govroam, eduroam and many intra-organisation ones) provide seemless internet access across buildings for many users.

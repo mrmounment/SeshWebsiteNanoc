@@ -7,7 +7,7 @@ online-session: true
 start-time: "18:00"
 end-time: "20:00"
 
-difficulty: 2
+difficulty: I
 ---
 
 An overview of assembly code & computer memory, and a couple of demos!

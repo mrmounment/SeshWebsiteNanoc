@@ -6,7 +6,7 @@ start-time: "19:00"
 end-time: "20:30"
 building: arts-tower
 room: Workroom 3
-difficulty: 1
+difficulty: B
 
 ---
 

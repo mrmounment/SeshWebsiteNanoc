@@ -7,7 +7,7 @@ file-name: Week 1 - Recap.pdf
 online-session: true
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 1
+difficulty: B
 ---
 
 A quick recap of last semester and a fun TryHackMe Boot2Root

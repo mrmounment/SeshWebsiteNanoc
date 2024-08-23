@@ -2,7 +2,7 @@
 title: Meet our Societies Talk (with DCS)
 date: 2022-09-20
 presenter: Mac Goodwin
-difficulty: 1
+difficulty: B
 online-session: true
 ---
 

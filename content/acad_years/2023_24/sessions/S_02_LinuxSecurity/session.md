@@ -6,6 +6,6 @@ building: the-diamond
 room: Computer Room 5
 start-time: "18:00"
 end-time: "19:30"
-difficulty: 2
+difficulty: I
 ---
 Linux Security

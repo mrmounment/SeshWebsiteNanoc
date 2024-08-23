@@ -1,7 +1,7 @@
-# Copy skill icons
-route '/skills/*/icon.png' do
-  skill_name = /\/skills\/([0-9a-zA-Z_]+)\/icon.png/.match(@item.identifier)[1]
-  "/skill_icons/#{skill_name}.png"
+# Copy prereq icons
+route '/prereqs/*/icon.png' do
+  prereq_name = /\/prereqs\/([0-9a-zA-Z_]+)\/icon.png/.match(@item.identifier)[1]
+  "/prereq_icons/#{prereq_name}.png"
 end
 
 compile '/basic_pages/sessions.erb' do

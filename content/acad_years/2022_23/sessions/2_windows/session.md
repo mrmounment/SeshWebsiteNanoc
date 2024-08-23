@@ -6,7 +6,7 @@ building: the-diamond
 room: Workroom 1
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 1
+difficulty: B
 ---
 
 We'll teach you some theory and crucial commands, then test some exploits old and new, including Follina, Eternal Blue, and Potato Attacks

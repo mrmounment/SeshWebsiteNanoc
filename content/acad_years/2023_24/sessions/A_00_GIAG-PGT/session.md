@@ -6,7 +6,7 @@ room: Computer Room
 building: north-campus
 start-time: "10:00"
 end-time: "12:00"
-difficulty: 1
+difficulty: B
 ---
 
 We are looking forward to seeing some of you at our PGT Give It a Go session.

@@ -5,7 +5,7 @@ presenter: Mac, Nick, Nicki, Vlad, Seb
 online-session: true
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 2
+difficulty: I
 ---
 
 TBD

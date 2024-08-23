@@ -6,7 +6,7 @@ pdf-file-name: wifi_hacking.pdf
 online-session: true
 start-time: "18:00"
 end-time: "20:00"
-difficulty: 2
+difficulty: I
 ---
 
 An exploration of the airwaves! Come along to learn some Wireshark snooping, MAC spoofing, and WiFi cracking.

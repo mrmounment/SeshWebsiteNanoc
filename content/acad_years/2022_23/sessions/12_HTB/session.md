@@ -6,7 +6,7 @@ room: Lecture Theatre 8
 building: the-diamond
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 3
+difficulty: X
 depends: ["htb"]
 
 ---

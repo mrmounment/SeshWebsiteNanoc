@@ -6,7 +6,7 @@ room: Lecture Theatre 8
 building: the-diamond
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 1
+difficulty: B
 ---
 
 AWS (Amazon Web Services) provides on-demand cloud computing platforms and APIs to individuals and companies. Learning how to utilise them (and cloud services in general) is extremely beneficial both for your career and personal development.

@@ -5,8 +5,8 @@ must_delete_identifiers = []
 @items.find_all("/acad_years/*/sessions/*/session.md").each do |item|
     if item.key? :depends then
         item[:depends].each do |d|
-            if @items["/skills/#{d}/description.md"] == nil or @items["/skills/#{d}/icon.png"] == nil then
-                warn "Session \"#{item.identifier}}\" references the skill \"#{d}\", which does not have a corresponding description and/or icon."
+            if @items["/prereqs/#{d}/description.md"] == nil or @items["/prereqs/#{d}/icon.png"] == nil then
+                warn "Session \"#{item.identifier}}\" references the prereq \"#{d}\", which does not have a corresponding description and/or icon."
                 must_delete_identifiers.push item.identifier
                 next
             end

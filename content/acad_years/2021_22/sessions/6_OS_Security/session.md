@@ -6,7 +6,7 @@ building: hicks-building
 room: Lecture Theatre 5
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 2
+difficulty: I
 depends: ['cli', 'kali']
 ---
 

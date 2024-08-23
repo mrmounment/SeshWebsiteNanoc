@@ -6,7 +6,7 @@ building: the-diamond
 room: Workroom 2
 start-time: "18:00"
 end-time: "19:30"
-difficulty: 1
+difficulty: B
 ---
 
 Open Source Intelligence  is using publicly available services to collect information about a group or individual. 

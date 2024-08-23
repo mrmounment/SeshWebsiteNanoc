@@ -6,7 +6,7 @@ building: arts-tower
 room: Lecture Theatre 5
 start-time: "19:00"
 end-time: "20:30"
-difficulty: 1
+difficulty: B
 ---
 
 Some new web attacks and DVWA

@@ -19,13 +19,13 @@ def session_dependencies(item)
         <details>
             <summary>
                 <h4>Session prerequisites</h4>
-                #{depends.map{|d| "<img src=\"/skill_icons/#{d}.png\">"}.join}
+                #{depends.map{|d| "<img src=\"/prereq_icons/#{d}.png\">"}.join}
             </summary>
             <ol>
                 #{depends.map{|d|
                 "<li>
-                    <img src=\"/skill_icons/#{d}.png\">
-                    <p>#{md_to_html items["/skills/#{d}/description.md"].raw_content}</p>
+                    <img src=\"/prereq_icons/#{d}.png\">
+                    <p>#{md_to_html items["/prereqs/#{d}/description.md"].raw_content}</p>
                 </li>
                 "}.join}
             </ol>
