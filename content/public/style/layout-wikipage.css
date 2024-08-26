@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+}   
+
+main {
+    display: grid;
+    grid-template-areas:
+        "a"
+        "b";
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        width: min(100%, 1400px);
+        grid-template-areas: "b a";
+        grid-template-columns: 4fr 10fr;
+    }
+}
+
+
+nav.wiki-sidenav {
+    grid-area: "b";
+    margin-top: 10vh;
+}
+
+nav.wiki-sidenav ul {
+    list-style: none;
+    padding: 0px;
+}
+
+nav.wiki-sidenav li {
+    display: block;
+}
+
+main article {
+    grid-area: "a";
+    margin-top: 5vh;
+    background-color: var(--card-background);
+    color: var(--card-text);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 32px;
+}
+
+main article h1 {
+    font-size: 2em;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    margin: 0;
+}
