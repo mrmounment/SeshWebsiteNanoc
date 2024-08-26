@@ -14,11 +14,23 @@
     </a>
     <main>
         <nav class="wiki-sidenav">
-            <h2><%= wiki_title_from_name @item.identifier.components[-2] %></h2>
+            <% one_section_up = @item.identifier.components[1..(@item.identifier.to_s.match?(/index\.md$/) ? -3 : -2)] %>
+            <h2><%= wiki_title_from_name((one_section_up[-1] or "Wiki")) %></h2>
             <%= wiki_list_section @item.identifier.components[1..-2].join("/") %>
         </nav>
         <article>
-            <h1><%= wiki_title_from_name @item.identifier %></h1>
+            <hgroup>
+                <nav class="wiki-breadcrumb-trail">
+                    <% cumulative_filename = "/wiki/" %>
+                    <% @item.identifier.components[1..-2].each do |filename| %>
+                        <% cumulative_filename += filename + "/" %>
+                        <a href="<%= cumulative_filename %>"><%= wiki_title_from_name filename %></a>
+                        <span class="breadcrumb-trail-separator">/<span>
+                    <% end %>
+
+                </nav>
+                <h1><%= wiki_title_from_name @item.identifier %></h1>
+            </hgroup>
             <%= yield %>
         </article>
     </main>

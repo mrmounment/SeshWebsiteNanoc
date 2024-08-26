@@ -39,13 +39,34 @@ main article {
     color: var(--card-text);
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    padding: 32px;
+    padding: 0 32px 32px 32px;
+}
+
+main article hgroup {
+    margin-top: 36px;
+}
+
+nav.wiki-breadcrumb-trail {
+    font-family: var(--title-font);
+}
+
+.wiki-breadcrumb-separator {
+    color: var(--shefesh-grey)
 }
 
 main article h1 {
     font-size: 2em;
+    margin-top: 0px;
 }
 
-:is(h1, h2, h3, h4, h5, h6) {
-    margin: 0;
+:is(h2, h3, h4, h5, h6) {
+    margin: 36px 0 0 0;
+}
+
+:is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 6px;
+}
+
+p {
+    margin: 12px 0 12px 0;
 }
