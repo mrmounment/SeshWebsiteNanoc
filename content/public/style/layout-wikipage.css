@@ -31,6 +31,7 @@ nav.wiki-sidenav ul {
 
 nav.wiki-sidenav li {
     display: block;
+    text-decoration: none;
 }
 
 main article {
