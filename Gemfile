@@ -13,4 +13,3 @@ gem 'adsf'
 gem 'nanoc', "~> 4.13"
 gem 'kramdown'
 gem 'erb'
-
