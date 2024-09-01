@@ -47,7 +47,7 @@ header {
 }
 
 :not(header, footer) :is(h1, h2, h3, h4, h5, h6) {
-    font-weight: 900;
+    font-weight: 700;
     font-family: var(--title-font);
     /* color: var(--shefesh-accent); */
     /* removed this cause I want it to be white */
@@ -58,4 +58,3 @@ a {
     font-weight: bold;
     color: var(--shefesh-accent);
 }
-
