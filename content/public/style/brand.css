@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 :root {
     --shefesh-complement: #09cece;
 
@@ -16,9 +16,9 @@
 
     --shefesh-grey: #3b3b3b;
 
-    --standard-font: "Roboto", "Inter", "San Fransisco", "Helvetica", "Arial", sans-serif;
-    --title-font: "Roboto Mono", monospace;
-    --condensed-font: "Roboto Condensed", "Inter Tight", "Arial Narrow", "Oswald", sans-serif;
+    --standard-font: "Comic Neue", "Roboto", "Inter", "San Fransisco", "Helvetica", "Arial", sans-serif;
+    --title-font: "Comic Neue", "Roboto Mono", monospace;
+    --condensed-font: "Comic Neue", "Roboto Condensed", "Inter Tight", "Arial Narrow", "Oswald", sans-serif;
 
 }
 
@@ -49,7 +49,9 @@ header {
 :not(header, footer) :is(h1, h2, h3, h4, h5, h6) {
     font-weight: 900;
     font-family: var(--title-font);
-    color: var(--shefesh-accent);
+    /* color: var(--shefesh-accent); */
+    /* removed this cause I want it to be white */
+    /* maybe we get SOME headers to be colour and some not? */
 }
 
 a {
