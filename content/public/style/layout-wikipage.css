@@ -20,7 +20,8 @@ main {
 
 nav.wiki-sidenav {
     grid-area: "b";
-    margin-top: 10vh;
+    padding-top: 10vh;
+    padding-left: 3vw;
 }
 
 nav.wiki-sidenav ul {

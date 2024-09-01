@@ -15,7 +15,7 @@
     <main>
         <nav class="wiki-sidenav">
             <% one_section_up = @item.identifier.components[1..(@item.identifier.to_s.match?(/index\.md$/) ? -3 : -2)] %>
-            <h2><%= wiki_title_from_name((one_section_up[-1] or "Wiki")) %></h2>
+            <h2>Pages in <%= wiki_title_from_name((one_section_up[-1] or "Wiki")) %></h2>
             <%= wiki_list_section @item.identifier.components[1..-2].join("/") %>
         </nav>
         <article>

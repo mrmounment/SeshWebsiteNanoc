@@ -26,7 +26,7 @@ end
 
 def wiki_title_from_name(file_name)
     if File.basename(file_name) == "index.md" then
-        "Section: #{File.basename(File.dirname(file_name)).gsub(/(?<!\\)_/, " ")}"
+        "Section page: \"#{File.basename(File.dirname(file_name)).gsub(/(?<!\\)_/, " ")}\""
     else
         File.basename(file_name, ".md").gsub(/(?<!\\)_/, " ")
     end
