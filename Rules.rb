@@ -2,8 +2,8 @@
 
 acad_years = Dir.children("content/acad_years").select{|c| /^\d{4}_\d{2,4}$/.match? c}
 
-compile '/basic_pages/index.md' do
-  filter :kramdown
+compile '/basic_pages/index.erb' do
+  filter :erb
   layout "/basic.erb"
   write "/index.html"
 end
