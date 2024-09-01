@@ -13,8 +13,10 @@
     </header>
     </a>
     <main>
-        <nav class="wiki-sidenav">
-            <img src="/logos/Wiki.png" alt="ShefESH Wiki">
+        <nav class="wiki-sidenav">]
+            <a href="/wiki">
+                <img src="/logos/Wiki.png" alt="ShefESH Wiki">
+            </a>
             <% one_section_up = @item.identifier.components[1..(@item.identifier.to_s.match?(/index\.md$/) ? -3 : -2)] %>
             <h2>Edit page</h2>
             ShefESH committee members:<br><a href="https://github.com/ShefESH/SeshWebsiteNanoc/edit/main/content<%= @item.identifier.to_s  %>">Edit&nbsp;this&nbsp;page on&nbsp;GitHub</a>
