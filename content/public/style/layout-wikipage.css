@@ -21,7 +21,7 @@ main {
 nav.wiki-sidenav {
     grid-area: "b";
     padding-top: 10vh;
-    padding-left: 3vw;
+    text-align: center;
 }
 
 nav.wiki-sidenav ul {
