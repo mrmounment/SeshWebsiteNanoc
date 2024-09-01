@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/brand.css">
+    <link rel="stylesheet" href="/style/home.css">
     <link rel="stylesheet" href="/style/session_card.css">
     <link rel="stylesheet" href="/style/layout.css">
-    <title>Sheffield Ethical Student Hackers</title>
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <title><%= @item[:title] ? "#{@item[:title]} - Sheffield Ethical Student Hackers" : "Sheffield Ethical Student Hackers" %></title>
+    <link rel="icon" type="image/x-icon" href="/logos/logo.png">
 </head>
 <body>
     <header>
