@@ -20,8 +20,15 @@ main {
 
 nav.wiki-sidenav {
     grid-area: "b";
-    padding-top: 10vh;
+    padding-top: 6vh;
+    margin: 4vh;
     text-align: center;
+}
+
+nav.wiki-sidenav h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
+    margin-top: 3em;
 }
 
 nav.wiki-sidenav ul {
@@ -31,7 +38,34 @@ nav.wiki-sidenav ul {
 
 nav.wiki-sidenav li {
     display: block;
+    background-color: var(--card-background);
+    color: var(--card-text);
+    border: 1ch solid var(--card-background);
+    margin: 0.75vh;
+}
+
+nav.wiki-sidenav li.sidenav-current-page {
+    background-color: var(--shefesh-complement);
+    border-color: var(--shefesh-complement);
+    color: var(--shefesh-text-on-complement);
     text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav.wiki-sidenav li:first-of-type { 
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+nav.wiki-sidenav li:last-of-type { 
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+nav.wiki-sidenav img {
+    width: 90%;
+    margin: auto;
 }
 
 main article {

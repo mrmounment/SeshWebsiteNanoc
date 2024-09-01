@@ -17,7 +17,12 @@ def wiki_list_section(section_path)
     listing = "<ul class='wiki-section-listing'>"
     Dir.each_child(File.join("content", "wiki", section_path)) do |child|
         if child != "index.md" then
-            listing = listing + "<li><a href='#{File.join("/", "wiki", section_path, File.basename(child, ".md"))}'>#{wiki_title_from_name child}</a></li>"
+            
+            if @item.identifier.to_s.end_with? File.join(section_path, child) then
+                listing = listing + "<li class=\"sidenav-current-page\"><span>#{wiki_title_from_name child}</span></li>"
+            else 
+                listing = listing + "<li><a href='#{File.join("/", "wiki", section_path, File.basename(child, ".md"))}'>#{wiki_title_from_name child}</a></li>"
+            end
         end
     end
     listing = listing + "</ul>"

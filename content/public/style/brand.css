@@ -2,13 +2,15 @@
 
 :root {
     --shefesh-complement: #09cece;
+    --shefesh-text-on-complement: black;
 
     --shefesh-accent: #A21135;
+    --shefesh-text-on-accent: white;
 
     --body-background: #EEFBFB;
     --body-text: #1C1E29;
 
-    --card-background: #8AE5E5;
+    --card-background: #d1e0e0;
     --card-text: #1C1E29;
 
     --header-background: #33354b;
@@ -25,6 +27,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --shefesh-accent: #FC83A1;
+        --shefesh-text-on-accent: black;
 
         --body-background: #1C1E29;
         --body-text: white;
