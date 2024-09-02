@@ -2,7 +2,7 @@ require 'fileutils'
 
 Nanoc::Filter.define(:md_tableofcontents) do |content, params|
     content = "
-- TOC
+1. TOC
 {:toc}
 #{content}"
     content
