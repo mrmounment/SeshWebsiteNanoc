@@ -36,3 +36,14 @@ def wiki_title_from_name(file_name)
         File.basename(file_name, ".md").gsub(/(?<!\\)_/, " ")
     end
 end
+
+def wiki_link_definitions
+    wiki_link_definitions = {}
+    @items.find_all("/wiki/**/*.md").each do |item|
+      wiki_link_definitions[item.identifier.components[1..].join("/").sub(/\.md$/, "").gsub(/(?<!\\)_/, " ")] = [item.identifier.without_ext, wiki_title_from_name(item.identifier.to_s)]
+      if item.identifier.to_s.end_with? "index.md"
+        wiki_link_definitions[item.identifier.components[1..-2].join("/").gsub(/(?<!\\)_/, " ")] = [item.identifier.to_s.sub(/index\.md$/, ""), wiki_title_from_name(item.identifier.to_s)]
+      end
+    end
+    wiki_link_definitions
+end

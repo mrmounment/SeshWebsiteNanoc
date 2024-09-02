@@ -106,3 +106,26 @@ main article h1 {
 p {
     margin: 12px 0 12px 0;
 }
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+
+td, th {
+    border-width: 1px;
+    border-style: solid;
+    padding: 8px;
+}
+
+th {
+    background-color: var(--shefesh-complement);
+    color: var(--shefesh-text-on-complement);
+    font-weight: bold;
+    border-color: var(--shefesh-text-on-complement);
+}
+
+td {
+    border-color: var(--shefesh-complement);
+}

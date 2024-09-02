@@ -1,44 +1,44 @@
 You can indicate that members should have specific prerequisites before attending the session. To use this functionality, set the _depends_ property to a list of strings from the list below.
 
-## Current valid _depends_ strings
+# Current valid _depends_ strings
 
-### anylinux
+## anylinux
 
 Session will use Linux, but no specific distro is required. Links to the Kali setup tutorial for the benefit of those who do not already have access to a Linux machine.
 
-### ardide
+## ardide
 
 Session will use the Arduino IDE.
 
-### cli
+## cli
 
 Session requires participants to be comfortable using the Linux command line
 
-### docker
+## docker
 
 Session will use Docker.
 
-### ghidra
+## ghidra
 
 Session will use Ghidra.
 
-### htb
+## htb
 
 Participants will need an account on Hack The Box.
 
-### kali
+## kali
 
 Participants will need a Kali Linux virtual machine.
 
-### pyselenium
+## pyselenium
 
 Session will use Python and Selenium.
 
-### thm
+## thm
 
 Participants will need an account on Try Hack Me.
 
-## Adding new _depends_ strings
+# Adding new _depends_ strings
 
 Each available string for the _depends_ property is the name of a subdirectory of the _content/prereqs_ directory. Each subdirectory needs to contain two files:
 
