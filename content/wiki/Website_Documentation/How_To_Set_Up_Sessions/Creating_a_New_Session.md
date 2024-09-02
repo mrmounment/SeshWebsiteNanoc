@@ -1,6 +1,3 @@
-1. 
-{:toc}
-
 Each session is represented as a subdirectory of the _sessions_ directory for the relevant academic year. For example, to create a session in the 2023/24 academic year, create a new directory under *content/acad_years/2023_24/sessions*. The name of the directory should contain only URL-safe characters. The directory should contain a file called _session.md_.
 
 _session.md_ starts with a line containing three hyphens (---) only. The lines immediately following this contain the properties of the session in [YAML](https://yaml.org/) format (key: value). The properties are concluded by another line containing three hyphens. For the available properties and their effects, please see the next section.

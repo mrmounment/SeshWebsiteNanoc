@@ -1,7 +1,10 @@
 require 'fileutils'
 
 Nanoc::Filter.define(:md_tableofcontents) do |content, params|
-    content = "{:.toc}\n" + content
+    content = "
+1. TOC
+{:toc}
+#{content}"
     content
 end
 
