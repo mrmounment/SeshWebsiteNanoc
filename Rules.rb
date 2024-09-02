@@ -1,17 +1,25 @@
 #!/usr/bin/env ruby
 
+# Check everything
+preprocess do
+  Dir.glob("src/Checks.*.rb") do |file|
+    eval(File.read(file))
+  end
+end
+
 acad_years = Dir.children("content/acad_years").select{|c| /^\d{4}_\d{2,4}$/.match? c}
 
-compile '/basic_pages/index.md' do
-  filter :kramdown
+compile '/basic_pages/index.erb' do
+  filter :erb
   layout "/basic.erb"
   write "/index.html"
 end
 
 compile '/basic_pages/*.md' do
+  file_name = File.basename(item.identifier,File.extname(item.identifier))
   filter :kramdown
   layout "/basic.erb"
-  write "/"+File.basename(item.identifier,File.extname(item.identifier))+"/index.html"
+  write "/"+file_name+"/index.html"
 end
 
 # Now evaluate every rule from the src directory

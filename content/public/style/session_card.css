@@ -2,7 +2,7 @@
     background-color: var(--card-background);
     color: var(--card-text);
     box-shadow: 8px 0 8px rgba(0,0,0,0.25), -8px 0 8px rgba(0,0,0,0.25);
-    border-radius: 24px;
+    border-radius: 16px;
     padding: 16px;
     margin: 16px 0 16px 0;
 }
@@ -73,7 +73,7 @@
 }
 
 .session-card details>ol>li>img {
-    width: 48px;
+    height: 40px;
 }
 
 .session-chips {
@@ -110,17 +110,34 @@
     border-bottom-right-radius: 8px;
 }
 
-.session-chips li[data-difficulty="1"] {
+.session-card h3 {
+    display: flex;
+    justify-content: left;
+}
+
+.session-card h3 a img {
+    height: 1.5em;
+    margin-right: 0.25em;
+}
+
+@media (prefers-color-scheme: dark) {
+    .session-card h3 a img {
+        filter: invert();
+    }    
+}
+
+
+.session-chips li[data-difficulty="B"] {
     background-color: darkgreen;
     color: white;
 }
 
-.session-chips li[data-difficulty="2"] {
+.session-chips li[data-difficulty="I"] {
     background-color: darkgoldenrod;
     color: black;
 }
 
-.session-chips li[data-difficulty="3"] {
+.session-chips li[data-difficulty="X"] {
     background-color: darkred;
     color: white;
 }

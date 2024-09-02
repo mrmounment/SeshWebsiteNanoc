@@ -4,14 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= wiki_title_from_name @item.identifier %> - ShefESH Wiki</title>
+    <link rel="stylesheet" href="/style/brand.css">
+    <link rel="stylesheet" href="/style/layout-wikipage.css">
 </head>
 <body>
     <header>
-        <img src="/logos/Wiki.png" alt="ShefESH Wiki" style="max-height: 200px">
+        <%= render "/partial/header.erb" %>
     </header>
+    </a>
     <main>
-        <h1><%= wiki_title_from_name @item.identifier %></h1>
-        <%= yield %>
+        <nav class="wiki-sidenav">
+            <a href="/wiki">
+                <img src="/logos/Wiki.png" alt="ShefESH Wiki">
+            </a>
+            <% one_section_up = @item.identifier.components[1..(@item.identifier.to_s.match?(/index\.md$/) ? -3 : -2)] %>
+            <h2>Edit page</h2>
+            ShefESH committee members:<br><a href="https://github.com/ShefESH/SeshWebsiteNanoc/edit/main/content<%= @item.identifier.to_s  %>">Edit&nbsp;this&nbsp;page on&nbsp;GitHub</a>
+
+
+            <h2>Pages in <%= wiki_title_from_name((one_section_up[-1] or "Wiki")) %></h2>
+            <%= wiki_list_section @item.identifier.components[1..-2].join("/") %>
+        </nav>
+        <article>
+            <hgroup>
+                <nav class="wiki-breadcrumb-trail">
+                    <% cumulative_filename = "/wiki/" %>
+                    <% @item.identifier.components[1..-2].each do |filename| %>
+                        <% cumulative_filename += filename + "/" %>
+                        <a href="<%= cumulative_filename %>"><%= wiki_title_from_name filename %></a>
+                        <span class="breadcrumb-trail-separator">/<span>
+                    <% end %>
+
+                </nav>
+                <h1><%= wiki_title_from_name @item.identifier %></h1>
+            </hgroup>
+            <%= yield %>
+        </article>
     </main>
     <footer>
     <%= render "/partial/footer.erb" %>
