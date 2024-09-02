@@ -13,3 +13,4 @@ gem 'adsf'
 gem 'nanoc', "~> 4.13"
 gem 'kramdown'
 gem 'erb'
+gem "rexml", ">= 3.3.6"
