@@ -1,5 +1,10 @@
 require 'fileutils'
 
+Nanoc::Filter.define(:md_tableofcontents) do |content, params|
+    content = "{:.toc}\n" + content
+    content
+end
+
 def wiki_add_section_indices(top_path="content/wiki")
     Dir.each_child(top_path) do |child|
         child_path = File.join(top_path, child)
@@ -47,3 +52,4 @@ def wiki_link_definitions
     end
     wiki_link_definitions
 end
+

@@ -91,5 +91,3 @@ Leave this running in the background, and the site will be recompiled every time
 # Concluding remarks
 
 This guide does not cover everything you can do with Nanoc, but it should hopefully be enough to get you started. If you get stuck, the [Nanoc documentation](https://nanoc.app/about/) is fairly good, or you can ask in Discord.
-
-[Website Documentation]
