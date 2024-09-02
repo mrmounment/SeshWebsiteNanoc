@@ -4,7 +4,7 @@ wiki_add_section_indices
 compile '/wiki/**/*.md'  do
     filter :erb if @item.fetch(:parse_erb, false)
     filter :md_tableofcontents
-    filter :kramdown, link_defs: wiki_link_definitions, header_offset: 1
+    filter :kramdown, link_defs: wiki_link_definitions, header_offset: 1, auto_ids: true
     layout "/wiki/wiki_page.erb"
   
     if @item.identifier =~ '**/index.*'
