@@ -1,37 +1,45 @@
+.committee-grid {
+    width: 100%;
+    list-style-type: none;
+    display: grid;
+    padding: 0px;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-auto-rows: max(15rem, min-content);
+    gap: 24px;
+}
+
+.committee-card :is(h3, h4) {
+    font-size: 1.4em;
+    grid-area: title;
+}
+
+.committee-card .member-bio {
+    grid-area: bio;
+}
+
+.committee-card img {
+    grid-area: photo;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+
 .committee-card {
     background-color: var(--card-background);
     color: var(--card-text);
     box-shadow: 8px 0 8px rgba(0,0,0,0.25), -8px 0 8px rgba(0,0,0,0.25);
     border-radius: 24px;
-    padding: 16px;
-    margin: 16px 0 16px 0;
-    height: 60%;
-}
-
-.committee-card img {
-    max-width: 30%;
-}
-
-.committee-card li {
-    display: inline-block;
-}
-
-
-.committee-inner {
-    content: "";
-    display: table;
-    clear: both;
-
-}
-
-.committee-list, .committee-img {
-
-    float: left;
-    width: 50%;
-}
-
-.committee-grid {
+    padding: 24px;
+    gap: 0 16px;
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-template-columns: 30% 70%;
+    grid-template-rows: min-content auto;
+    grid-template-areas:
+        "photo title"
+        "photo bio";
+}
+
+.committee-card .committee-role {
+    color: var(--shefesh-complement)
 }
