@@ -4,6 +4,7 @@ Nanoc::Filter.define(:md_tableofcontents) do |content, params|
     content = "
 1. TOC
 {:toc}
+
 #{content}"
     content
 end
