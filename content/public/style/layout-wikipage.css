@@ -139,3 +139,7 @@ td {
     border-radius: 16px;
     width: fit-content;
 }
+
+img {
+    max-width: 100%;
+}
