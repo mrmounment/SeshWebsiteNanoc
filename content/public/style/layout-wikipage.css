@@ -143,3 +143,10 @@ td {
 img {
     max-width: 100%;
 }
+
+blockquote {
+    border-left: 4px solid var(--shefesh-complement);
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
