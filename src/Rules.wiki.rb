@@ -13,4 +13,13 @@ compile '/wiki/**/*.md'  do
       write @item.identifier.without_ext + '/index.html'
     end
   
+end
+
+compile '/wiki/**/*.*'  do
+  if ['png', 'jpg', 'jpeg', 'gif'].include? @item.identifier.ext then
+    write @item.identifier
+  else
+    @item.delete_if { true }
   end
+end
+
