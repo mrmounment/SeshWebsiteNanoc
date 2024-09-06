@@ -39,8 +39,10 @@ def wiki_list_section(section_path)
 end
 
 def wiki_title_from_name(file_name)
+    return "Wiki Root" if file_name.match? /\/(wiki(\/?(index\.(html|md)\/?))?)?$/
+
     if File.basename(file_name) == "index.md" then
-        "Section page: \"#{File.basename(File.dirname(file_name)).gsub(/(?<!\\)_/, " ")}\""
+        "\"#{File.basename(File.dirname(file_name)).gsub(/(?<!\\)_/, " ")}\" section index"
     else
         File.basename(file_name, ".md").gsub(/(?<!\\)_/, " ")
     end

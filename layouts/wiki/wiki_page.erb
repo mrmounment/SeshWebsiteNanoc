@@ -22,8 +22,8 @@
             ShefESH committee members:<br><a href="https://github.com/ShefESH/SeshWebsiteNanoc/edit/main/content<%= @item.identifier.to_s  %>">Edit&nbsp;this&nbsp;page on&nbsp;GitHub</a>
 
 
-            <h2>Pages in <%= wiki_title_from_name((one_section_up[-1] or "Wiki")) %></h2>
-            <%= wiki_list_section @item.identifier.components[1..-2].join("/") %>
+            <h2>Pages in "<%= wiki_title_from_name((one_section_up[-1] or "/")) %>"</h2>
+            <%= wiki_list_section((one_section_up or "/")) %>
         </nav>
         <article>
             <hgroup>
