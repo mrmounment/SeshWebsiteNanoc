@@ -19,7 +19,7 @@ main {
 
 
 nav.wiki-sidenav {
-    grid-area: "b";
+    grid-area: b;
     padding-top: 6vh;
     margin: 4vh;
     text-align: center;
@@ -69,7 +69,7 @@ nav.wiki-sidenav img {
 }
 
 main article {
-    grid-area: "a";
+    grid-area: a;
     margin-top: 5vh;
     background-color: var(--card-background);
     color: var(--card-text);
@@ -149,4 +149,11 @@ blockquote {
     margin: 20px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+pre {
+    width: 100%;
+    overflow-x: auto;
+    padding: 16px;
+    font-size: 1.1em;
 }
