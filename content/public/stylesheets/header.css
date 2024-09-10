@@ -1,15 +1,44 @@
 .HoverHidden{display: none;}
 
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 li{
     display: inline-block;
+    background-color: rgb(18, 138, 251);
+    border-radius: 5px;
+    padding: 10,10,10,10;
+}
+
+li a{
+    display: block;
+}
+
+#Wiki{
+    position: relative;
+}
+
+#Careers{
+    position: relative;
 }
 
 #Careers:hover{
-    #careerHide{display: block;}
+    .hoverItem{display: none;}
+    #careerHide{
+        display: block;
+        li {display: block;}
+    }
 }
 
 #Wiki:hover{
-    #wikiHide{display: block;}
+    #wikiHide{
+        display: block;
+        position: absolute;
+        right: 1px;
+        li {display: block;}
+    }
 }
 
 @media (pointer: coarse){
