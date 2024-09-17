@@ -5,14 +5,14 @@
     justify-content: center;
 }
 
-li{
+.menuLink{
     display: inline-block;
     background-color: rgb(18, 138, 251);
     border-radius: 5px;
     padding: 10,10,10,10;
 }
 
-li a{
+.menuLink a{
     display: block;
 }
 
@@ -25,9 +25,11 @@ li a{
 }
 
 #Careers:hover{
-    .hoverItem{display: none;}
     #careerHide{
         display: block;
+        position: absolute;
+        /* not sure why this works but using left sends it way off to right -JR */
+        right: -33px;
         li {display: block;}
     }
 }
@@ -36,7 +38,8 @@ li a{
     #wikiHide{
         display: block;
         position: absolute;
-        right: 1px;
+        /* ditto as above */
+        right: -52px;
         li {display: block;}
     }
 }
