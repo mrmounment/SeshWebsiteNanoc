@@ -10,10 +10,7 @@ If you are adding yourself to an existing committee, you will find a directory f
 
 # Adding a committee member
 
-## initial setup
-
 Each folder needs 2 files. An image and a markdown file. The image should be the same name as the folder (committee members name, all lower case). The markdown file should follow the following structure:
-
 
 ~~~ yaml
 ---
@@ -30,3 +27,13 @@ personal-name: github.png
 personal-link: https://github.com/EchoDevG
 ---
 ~~~
+
+And thats it! Write your own info of course. The priority is as follows:
+
+Role           | Priority
+---------------|-------
+President      | 0
+Core committee | 1
+Other roles    | 2
+
+This just makes sure things appear in a nice and neat order.
