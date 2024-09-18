@@ -4,9 +4,9 @@ _session.md_ starts with a line containing three hyphens (---) only. The lines i
 
 Any text after the properties is parsed as [Markdown](https://en.wikipedia.org/wiki/Markdown) and then displayed along with the session properties on the site. We typically use this to provide an brief description of the session content.
 
-## Session properties
+# Session properties
 
-### building
+## building
 
 Code for the building that this session will take place in. This will link automatically to the SSID interactive campus map, so you should format the name as it appears in campus map URLs. This is usually fairly self-explanatory - the building name, all in lower case, with spaces replaced by hyphens.
 
@@ -22,10 +22,10 @@ Here is a list of the codes for buildings that student societies commonly use, o
 | Students' Union building | students-union |
 | 38 Mappin Street | 38-mappin-street |
 
-### date
+## date
 The date of the session, in the format _YYYY_-_MM_-_DD_.
 
-### difficulty
+## difficulty
 A value reflecting the difficulty of the session. Currently:
 
 - the letter **B**  represents a **beginner** session
@@ -34,35 +34,35 @@ A value reflecting the difficulty of the session. Currently:
 - any other value, or omission of this property, displays "unknown difficulty"
    - if this is the intended behaviour, please use **null**, which will be permanently reserved for this use
 
-### depends
+## depends
 
 A list of prerequisites that this session depends on. For more information on acceptable values here, see the dedicated wiki page on Session Prerequisites.
 
-### end-time
+## end-time
 
 The time at which this session will end, in the format "_HH_:_MM_" (24 hour clock).
 
 **You must enclose the time in quotes**. If you don't, the colon will play havoc with the YAML parser and the output will be wrong.
 
-### online-session
+## online-session
 
 Set "online-session: true" to display "Online session" in place of the building and room number.
 
-### presenter
+## presenter
 
 The name of the person who will be presenting this session.
 
-### room
+## room
 
 The name of the room this session will take place in.
 
-### start-time
+## start-time
 
 The time at which this session will start, in te format "_HH:MM_" (24 hour clock).
 
 **You must enclose the time in quotes**. If you don't, the colon will play havoc with the YAML parser and the output will be wrong.
 
-## Attaching files
+# Attaching files
 
 Any file in the session directory other than _session.md_ will be copied verbatim, and appear with the session under "session files".
 

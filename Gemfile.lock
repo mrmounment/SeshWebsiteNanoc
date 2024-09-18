@@ -99,8 +99,9 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rbtree (0.4.6)
-    rexml (3.3.2)
+    rexml (3.3.6)
       strscan
+    rouge (4.3.0)
     set (1.1.0)
     slow_enumerator_tools (1.1.0)
     sorted_set (1.0.3)
@@ -125,6 +126,8 @@ DEPENDENCIES
   kramdown
   nanoc (~> 4.13)
   nanoc-live
+  rexml (>= 3.3.6)
+  rouge
 
 RUBY VERSION
    ruby 3.2.2p53
