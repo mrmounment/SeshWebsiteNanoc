@@ -10,8 +10,7 @@
 
 # Fundamental Skills moved to the wiki rather than a set of PDFs
 /wiki/fundamental-skills/ /wiki/Fundamental_Skills 301
-/wiki/fundamental-skills/web-1---inspecting-a-webpage.pdf /wiki/Fundamental_Skills/Web/1._Inspecting_a_Webpage/ 301
-/wiki/fundamental-skills/web-2---understanding-http-requests.pdf /wiki/Fundamental_Skills/Web/2._Understanding_HTTP_Requests 301
+/wiki/fundamental-skills/web-1---inspecting-a-webpage.pdf /wiki/Fundamental_Skills/Web/1._Inspecting_a_Webpage/ 301iki/fundamental-skills/web-2---understanding-http-requests.pdf /wiki/Fundamental_Skills/Web/2._Understanding_HTTP_Requests 301
 /wiki/fundamental-skills/web-3---burp-suite.pdf /wiki/Fundamental_Skills/Web/3._Using_Burp_Suite 301
 /wiki/fundamental-skills/tools-1---curl.pdf /wiki/Fundamental_Skills/Web/4._Using_CURL 301
 /wiki/fundamental-skills/linux-1---navigating-the-file-system.pdf /wiki/Fundamental_Skills/Linux/3._Navigating_the_File_System 301
