@@ -32,14 +32,11 @@ title: Committee
     <h3><%= yearname %></h3>
 
     <% @items.find_all("/acad_years/#{yeardir}/people/**/profile.md").sort{|s1, s2| s2[:priority] <=> s1[:priority]}.each do |member| %>
-        <div class="committee-card committee-inner">
-        <ul class="committee-list" >
-            <li>Role: <%= member[:role] %></li>
-            <li>Name: <%= member[:name] %></li>
-            <li><%= member[:bio] %></li>
-        </ul>
-        <img class="committee-img" src="<%="/acad_years/#{yeardir}/people/#{member[:id]}/#{member[:image]}"%>" alt="A photo of <%= member[:name] %>">
-
+        <li class="committee-card">
+        <img src="<%="/acad_years/#{yeardir}/people/#{member[:id]}/#{member[:image]}"%>" alt="Photo of <%= member[:name] %>">
+        <h3><span class="committee-name"><%= member[:name] %></span><br><span class="committee-role"><%= member[:role] %></span></h3>
+        <p class="member-bio"><%= member[:bio] %></p>
+    </li>
     </div>
     <% end %>
 <% end %>

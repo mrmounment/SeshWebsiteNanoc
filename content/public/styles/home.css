@@ -1,15 +1,7 @@
-.homepage-column {
-    box-sizing: border-box;
-    float: left;
-    width: 50%;
-    padding: 5%;
-}
+
 
 .homepage-row {
-    box-sizing: border-box;
-    content: "";
-    display: table;
-    clear: both;
+         columns: 2 200px;
 }
 
 .highlight {
