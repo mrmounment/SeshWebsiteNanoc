@@ -2,7 +2,7 @@ For your first-year group project, you used a framework called Sinatra to develo
 
 Nanoc is in many ways quite similar to Sinatra, so a lot of the knowledge you already have is transferable. This page explains the differences between Sinatra and Nanoc to help you get started more quickly.
 
-## Static vs dynamic sites
+# Static vs dynamic sites
 
 In a Sinatra application, when a request is made, the server runs Ruby code to generate a response to send to the client. A site that works like this (in any language, not just Ruby) is called _dynamic_, because each request has a reponse generated specifically for it at the time the request is made.
 
@@ -10,7 +10,7 @@ The most important conceptual difference between Sinatra and Nanoc is that Nanoc
 
 This means that there isn't any scope to tailor responses to the specific request, rather than just the URL requested. For example, a site that requires a login system can't be static, because requests to the same URL need to return differently depending on the identity of the user. However, hosting static sites is less computationally intensive than dynamic ones, and that means static sites can be faster while also being cheaper to run - plenty of companies will even let you host a static site on their infrastructure for free. 
 
-## Layouts are the new views
+# Layouts are the new views
 
 In Sinatra, you have views, which are templates that your Ruby code populates with information.
 
@@ -28,7 +28,7 @@ Every layout has an _identifier_, which is the path to its ERB file relative to 
 
 There is no notion of a default layout that every page will inherit from like there is in Sinatra, but you can use the "render" method above to achieve the same effect. For example, in Sinatra, you might have a `layout.erb` which contains a header and a footer. In Nanoc, you would have a `header.erb` and a `footer.erb`, and call `render` wherever you want to use them.
 
-## Rules and helpers are the new controllers
+# Rules and helpers are the new controllers
 
 In Sinatra, you have controller files that contain routes, which are blocks of code that determine how to get from a request to a response.
 
@@ -52,7 +52,7 @@ end
 
 **Helpers** are Ruby files that live in the _lib_ directory. Methods defined in these files are automatically accessible in Rules.rb, so you can split your code between files.
 
-## Putting it all together
+# Putting it all together
 
 Assuming you followed the [setup instructions](../Setting_Up_Your_Environment/) correctly, you should now be ready to compile the ShefESH website.
 
@@ -72,7 +72,7 @@ to start a temporary web server which allows you to view the site.
 
 All being well, you should be able to navigate to the correct IP address in a web browser and view the site. The path of this page will be "/wiki/Website_Documentation/Nanoc_Quickstart_for_Sinatra_users"
 
-## A note about rerun
+# A note about rerun
 
 When developing with Sinatra, you may have used a utility called _rerun_ to automatically reload the web server when you change the site. With Nanoc, you don't need rerun  - the functionality is built-in:
 
@@ -88,6 +88,6 @@ bundle exec nanoc compile --watch
 
 Leave this running in the background, and the site will be recompiled every time you change it.
 
-## Concluding remarks
+# Concluding remarks
 
 This guide does not cover everything you can do with Nanoc, but it should hopefully be enough to get you started. If you get stuck, the [Nanoc documentation](https://nanoc.app/about/) is fairly good, or you can ask in Discord.
