@@ -2,8 +2,6 @@
 title: Committee
 ---
 
-<link rel="stylesheet" href="/style/committee_card.css">
-
 <h1>Committee</h1>
 
 <% yeardir = acad_years.first %>
@@ -30,13 +28,13 @@ title: Committee
     <% yearname = yeardir.gsub "_", "/" %>
 
     <h3><%= yearname %></h3>
-
+    <ul class="committee-grid">
     <% @items.find_all("/acad_years/#{yeardir}/people/**/profile.md").sort{|s1, s2| s2[:priority] <=> s1[:priority]}.each do |member| %>
-        <li class="committee-card">
-        <img src="<%="/acad_years/#{yeardir}/people/#{member[:id]}/#{member[:image]}"%>" alt="Photo of <%= member[:name] %>">
-        <h3><span class="committee-name"><%= member[:name] %></span><br><span class="committee-role"><%= member[:role] %></span></h3>
-        <p class="member-bio"><%= member[:bio] %></p>
-    </li>
-    </div>
+            <li class="committee-card">
+                <img src="<%="/acad_years/#{yeardir}/people/#{member[:id]}/#{member[:image]}"%>" alt="Photo of <%= member[:name] %>">
+                <h3><span class="committee-name"><%= member[:name] %></span><br><span class="committee-role"><%= member[:role] %></span></h3>
+                <p class="member-bio"><%= member[:bio] %></p>
+            </li>
     <% end %>
+    </ul>
 <% end %>

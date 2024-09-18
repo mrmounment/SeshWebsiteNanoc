@@ -7,7 +7,7 @@ preprocess do
   end
 end
 
-acad_years = Dir.children("content/acad_years").select{|c| /^\d{4}_\d{2,4}$/.match? c}
+acad_years = Dir.children("content/acad_years").select{|c| /^\d{4}_\d{2,4}$/.match? c}.sort.reverse
 
 compile '/basic_pages/index.erb' do
   filter :erb
