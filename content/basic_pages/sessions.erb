@@ -1,0 +1,54 @@
+---
+title: Sessions
+---
+
+
+<h1>Sessions</h2>
+
+<%= md_to_html File.read("content/basic_pages/session-header.md") %>
+
+<% acad_years.each do |yeardir| %>
+    <% yearname = yeardir.gsub "_", "/" %>
+        <section id="acad-year-<%= yeardir %>" class="session-acad-year">
+            <h2>Academic Year <%= yearname %></h2>
+            <% @items.find_all("/acad_years/#{yeardir}/sessions/**/session.md").sort{|s1, s2| s2[:date] <=> s1[:date]}.each do |session| %>
+                <% session_id = "session-card-#{yeardir}-#{session.identifier.to_s.split("/")[-2]}" %>
+                <article class="session-card" id="<%= session_id %>">
+                    <h3>
+                        <a href="#<%= session_id %>"><img alt="Permalink" src="/icons/link.svg"></a>
+                        <%= session[:title] %>
+                    </h3>
+                    <ol class="session-chips">
+                        <li>
+                            <img src="/icons/date.svg" alt="Date:">
+                            <%= session[:date].strftime("%a %d %b %Y") %>
+                        </li>
+                        <li>
+                            <img src="/icons/time.svg" alt="Time:">
+                            <%= session[:'start-time'] %> - <%= session[:'end-time'] %>
+                        </li>
+                        <li data-difficulty="<%= session[:difficulty] %>">
+                                <%= session_difficulty_description session.fetch(:difficulty, 0) %>
+                        </li>
+                        <li>
+                            <img src="/icons/person.svg" alt="Presenter:">
+                            <% if session.fetch(:presenter, false) %>
+                                <%= session[:presenter] %>
+                            <% else %>
+                                TBC
+                            <% end %>
+                        </li>
+                        <li>
+                            <img src="/icons/location.svg" alt="Location:">
+                            <%= session_location_link session %>
+                        </li>
+                    </ol>
+                    <p class="session-description">
+                        <%= md_to_html session.raw_content %>
+                    </p>
+                    <%= session_dependencies session %>
+                    <%= session_files session %>
+                </article>
+            <% end %>
+        </section>
+<% end %>
