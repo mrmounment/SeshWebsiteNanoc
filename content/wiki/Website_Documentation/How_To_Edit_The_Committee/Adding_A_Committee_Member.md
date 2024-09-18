@@ -16,6 +16,7 @@ Each folder needs 2 files. An image and a markdown file. The image should be the
 
 
 ~~~ yaml
+---
 id: echo
 role: President
 priority: 0
@@ -27,4 +28,5 @@ contact-name: linkedin.png
 contact-link: https://www.linkedin.com/in/echo-garratt-12a007236/
 personal-name: github.png
 personal-link: https://github.com/EchoDevG
+---
 ~~~
