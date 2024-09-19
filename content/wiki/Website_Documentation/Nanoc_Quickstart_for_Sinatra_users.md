@@ -17,14 +17,14 @@ In Sinatra, you have views, which are templates that your Ruby code populates wi
 Nanoc has an identical concept by a different name: layouts. They take the form of ERB files located in the _layouts_ directory. Remember, of course, that the populating happens at compile time, not at request time.
 
 You can also call `yield` within the template like this (we'll see what exactly it does shortly):
-```
+~~~
 <%= yield %>
-```
+~~~
 
 Every layout has an _identifier_, which is the path to its ERB file relative to the _layouts_ directory, prefixed with a slash. You can render other layouts within your layout by calling `render` with a layout identifier:
-```
+~~~
 <%= render "/another-layout.erb" %>
-```
+~~~
 
 There is no notion of a default layout that every page will inherit from like there is in Sinatra, but you can use the "render" method above to achieve the same effect. For example, in Sinatra, you might have a `layout.erb` which contains a header and a footer. In Nanoc, you would have a `header.erb` and a `footer.erb`, and call `render` wherever you want to use them.
 
@@ -42,13 +42,13 @@ You have access to an object called `@item`, which contains some details about t
 
 Here is an example rule:
 
-```ruby
+~~~ruby
 compile '/wikipages/**/*.md' do # matches all Markdown files under the wikipages directory 
     filter :kramdown # calls the Kramdown filter to convert the Markdown to HTML
     layout '/wikipage.erb' # Apply the wikipage.erb layout
     write "/wiki/#{@item.identifier.without_ext}/index.html" # Write to file
 end
-```
+~~~
 
 **Helpers** are Ruby files that live in the _lib_ directory. Methods defined in these files are automatically accessible in Rules.rb, so you can split your code between files.
 
@@ -57,16 +57,16 @@ end
 Assuming you followed the [setup instructions](../Setting_Up_Your_Environment/) correctly, you should now be ready to compile the ShefESH website.
 
 In the site directory, run
-```
+~~~
 bundle exec nanoc
-```
+~~~
 
 The site will be compiled.
 
 Now run
-```
+~~~
 bundle exec nanoc view
-```
+~~~
 
 to start a temporary web server which allows you to view the site.
 
@@ -76,15 +76,15 @@ All being well, you should be able to navigate to the correct IP address in a we
 
 When developing with Sinatra, you may have used a utility called _rerun_ to automatically reload the web server when you change the site. With Nanoc, you don't need rerun  - the functionality is built-in:
 
-```
+~~~
 bundle exec nanoc view --live-reload
-```
+~~~
 
 The nature of a static site, though, is that reloading the web server isn't actually enough - you also need to recompile the site whenever it changes. Luckily, Nanoc can do this for us as well. In a separate terminal window, run
 
-```
+~~~
 bundle exec nanoc compile --watch
-```
+~~~
 
 Leave this running in the background, and the site will be recompiled every time you change it.
 
