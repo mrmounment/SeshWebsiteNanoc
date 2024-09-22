@@ -11,7 +11,7 @@ title: Committee
 <h2>Current committee</h2>
 
 <ul class="committee-grid">
-<% @items.find_all("/acad_years/#{yeardir}/people/**/profile.md").sort{|s1, s2| s2[:priority] <=> s1[:priority]}.each do |member| %>
+<% @items.find_all("/acad_years/#{yeardir}/people/**/profile.md").sort_by { |i| i[:priority] }.each do |member| %>
     <li class="committee-card">
         <img src="<%="/acad_years/#{yeardir}/people/#{member[:id]}/#{member[:image]}"%>" alt="Photo of <%= member[:name] %>">
         <h3><span class="committee-name"><%= member[:name] %></span><br><span class="committee-role"><%= member[:role] %></span></h3>
@@ -29,7 +29,7 @@ title: Committee
 
     <h3><%= yearname %></h3>
     <ul class="committee-grid">
-    <% @items.find_all("/acad_years/#{yeardir}/people/**/profile.md").sort{|s1, s2| s2[:priority] <=> s1[:priority]}.each do |member| %>
+    <% @items.find_all("/acad_years/#{yeardir}/people/**/profile.md").sort_by { |i| i[:priority] }.each do |member| %>
             <li class="committee-card">
                 <img src="<%="/acad_years/#{yeardir}/people/#{member[:id]}/#{member[:image]}"%>" alt="Photo of <%= member[:name] %>">
                 <h3><span class="committee-name"><%= member[:name] %></span><br><span class="committee-role"><%= member[:role] %></span></h3>
