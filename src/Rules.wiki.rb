@@ -1,6 +1,5 @@
 wiki_add_section_indices
 
-
 compile '/wiki/**/*.md'  do
     filter :erb if @item.fetch(:parse_erb, false)
     filter :md_tableofcontents
