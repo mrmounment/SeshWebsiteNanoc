@@ -4,6 +4,7 @@ Nanoc::Filter.define(:md_tableofcontents) do |content, params|
     content = "
 1. TOC
 {:toc}
+
 #{content}"
     content
 end
@@ -23,8 +24,8 @@ end
 
 def wiki_list_section(section_path)
     listing = "<ul class='wiki-section-listing'>"
-    Dir.each_child(File.join("content", "wiki", section_path)) do |child|
-        if child != "index.md" then
+    Dir.children(File.join("content", "wiki", section_path)).sort.each do |child|
+        if (Dir.exist?(File.join("content", "wiki", section_path, child)) || child.end_with?(".md")) && (child != "index.md") then
             
             if @item.identifier.to_s.end_with? File.join(section_path, child) then
                 listing = listing + "<li class=\"sidenav-current-page\"><span>#{wiki_title_from_name child}</span></li>"
@@ -38,8 +39,10 @@ def wiki_list_section(section_path)
 end
 
 def wiki_title_from_name(file_name)
+    return "Wiki Root" if file_name.match? /\/(wiki(\/?(index\.(html|md)\/?))?)?$/
+
     if File.basename(file_name) == "index.md" then
-        "Section page: \"#{File.basename(File.dirname(file_name)).gsub(/(?<!\\)_/, " ")}\""
+        "\"#{File.basename(File.dirname(file_name)).gsub(/(?<!\\)_/, " ")}\" section index"
     else
         File.basename(file_name, ".md").gsub(/(?<!\\)_/, " ")
     end

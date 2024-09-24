@@ -31,9 +31,9 @@ If you want to use Rubyinstaller, the steps are as follows:
    - I don't recommend installing a distribution-packaged version of rbenv as it's likely to be out of date.
 2. Do whatever is necessary to ensure that the output of `rbenv init -` is evaluated when your shell starts. This sets your PATH so that when you run `ruby`, `bundle` etc., you call the rbenv's installed version and not just whatever your distribution happens to provide by default.
     - If you use Bash - which you probably do unless you explicitly know that you don't - you do this by adding the following line to the bottom of the _.bashrc_ file in your home directory.
-        ```
+        ~~~
         eval "$(rbenv init -)"
-        ```
+        ~~~
 3. After closing and reopening your terminal window, change into the SeshWebsiteNanoc directory and run `rbenv install` to install the correct version of Ruby (auto-detected from the file _.ruby-version_)
 
 ## Mac users
