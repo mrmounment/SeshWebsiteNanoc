@@ -46,6 +46,19 @@
     position: relative;
 }
 
+.fa-bars{
+    font-size: 36px;
+}
+
+#ham-icon{
+    padding-left: 45px;
+}
+
+#hamburger{
+    justify-content: center;
+    text-align: center;
+}
+
 #Careers:hover, #Wiki:hover{
     #careerHide, #wikiHide{
         display: block;
