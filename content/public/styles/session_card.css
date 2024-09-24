@@ -1,0 +1,143 @@
+.session-card {
+    background-color: var(--card-background);
+    color: var(--card-text);
+    box-shadow: 8px 0 8px rgba(0,0,0,0.25), -8px 0 8px rgba(0,0,0,0.25);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px 0 16px 0;
+}
+
+.session-card :is(h1, h2, h3, h4, h5, h6) {
+    color: var(--card-text);
+}
+
+.session-card summary {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.5em;
+}
+
+
+.session-card summary h4 {
+    display: inline;
+    margin: 0;
+}
+
+.session-card details summary h4::before {
+    display: inline-block;
+    content: "\025B6";
+    width: 0.5em;
+    margin: 0 0.75em 0 0.25em;
+}
+
+.session-card details[open] summary h4::before {
+    content: "\025BC";
+}
+
+.session-card summary:is(:hover, :active) h4 {
+    text-decoration: underline;
+}
+
+.session-card summary img {
+    height: 4ex;
+}
+
+.session-card details>ol {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.session-card details>ol>li {
+    background-color: var(--body-background);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 0.5em;
+    padding: 8px;
+    margin: 2px;
+}
+
+.session-card details>ol>li:first-child {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.session-card details>ol>li:last-child {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.session-card details>ol>li>img {
+    height: 40px;
+}
+
+.session-chips {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 4px;
+    padding: 0px;
+    margin: 8px 0px 32px 0px;
+}
+
+.session-chips li {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: var(--condensed-font);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.session-chips li a {
+    color: white;
+}
+
+.session-chips li:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.session-chips li:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.session-card h3 {
+    display: flex;
+    justify-content: left;
+}
+
+.session-card h3 a img {
+    height: 1.5em;
+    margin-right: 0.25em;
+}
+
+@media (prefers-color-scheme: dark) {
+    .session-card h3 a img {
+        filter: invert();
+    }    
+}
+
+
+.session-chips li[data-difficulty="B"] {
+    background-color: darkgreen;
+    color: white;
+}
+
+.session-chips li[data-difficulty="I"] {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+.session-chips li[data-difficulty="X"] {
+    background-color: darkred;
+    color: white;
+}

@@ -7,7 +7,7 @@ preprocess do
   end
 end
 
-acad_years = Dir.children("content/acad_years").select{|c| /^\d{4}_\d{2,4}$/.match? c}
+acad_years = Dir.children("content/acad_years").select{|c| /^\d{4}_\d{2,4}$/.match? c}.sort.reverse
 
 compile '/basic_pages/index.erb' do
   filter :erb
@@ -15,9 +15,9 @@ compile '/basic_pages/index.erb' do
   write "/index.html"
 end
 
-compile '/basic_pages/*.md' do
+compile '/basic_pages/contact.erb' do
   file_name = File.basename(item.identifier,File.extname(item.identifier))
-  filter :kramdown
+  filter :erb
   layout "/basic.erb"
   write "/"+file_name+"/index.html"
 end

@@ -1,0 +1,160 @@
+body {
+    margin: 0px;
+}   
+
+main {
+    display: grid;
+    grid-template-areas:
+        "a"
+        "b";
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        width: min(100%, 1400px);
+        grid-template-areas: "b a";
+        grid-template-columns: 4fr 10fr;
+    }
+}
+
+
+nav.wiki-sidenav {
+    grid-area: b;
+    padding-top: 6vh;
+    margin: 4vh;
+    text-align: center;
+}
+
+nav.wiki-sidenav h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
+    margin-top: 3em;
+}
+
+nav.wiki-sidenav ul {
+    list-style: none;
+    padding: 0px;
+}
+
+nav.wiki-sidenav li {
+    display: block;
+    background-color: var(--card-background);
+    color: var(--card-text);
+    border: 1ch solid var(--card-background);
+    margin: 0.75vh;
+}
+
+nav.wiki-sidenav li.sidenav-current-page {
+    background-color: var(--shefesh-complement);
+    border-color: var(--shefesh-complement);
+    color: var(--shefesh-text-on-complement);
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav.wiki-sidenav li:first-of-type { 
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+nav.wiki-sidenav li:last-of-type { 
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+nav.wiki-sidenav img {
+    width: 90%;
+    margin: auto;
+}
+
+main article {
+    grid-area: a;
+    margin-top: 5vh;
+    background-color: var(--card-background);
+    color: var(--card-text);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 0 32px 32px 32px;
+    overflow: auto;
+}
+
+main article hgroup {
+    margin-top: 36px;
+}
+
+nav.wiki-breadcrumb-trail {
+    font-family: var(--title-font);
+}
+
+.wiki-breadcrumb-separator {
+    color: var(--shefesh-grey)
+}
+
+main article h1 {
+    font-size: 2em;
+    margin-top: 0px;
+}
+
+:is(h2, h3, h4, h5, h6) {
+    margin: 36px 0 0 0;
+}
+
+:is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 6px;
+}
+
+p {
+    margin: 12px 0 12px 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+
+td, th {
+    border-width: 1px;
+    border-style: solid;
+    padding: 8px;
+}
+
+th {
+    background-color: var(--shefesh-complement);
+    color: var(--shefesh-text-on-complement);
+    font-weight: bold;
+    border-color: var(--shefesh-text-on-complement);
+}
+
+td {
+    border-color: var(--shefesh-complement);
+}
+
+#markdown-toc {
+    display: block;
+    border: 1px solid var(--shefesh-complement);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    border-radius: 16px;
+    width: fit-content;
+}
+
+img {
+    max-width: 100%;
+}
+
+blockquote {
+    border-left: 4px solid var(--shefesh-complement);
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+pre {
+    width: 100%;
+    overflow-x: auto;
+    padding: 16px;
+    font-size: 1.1em;
+}

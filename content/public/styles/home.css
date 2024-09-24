@@ -1,0 +1,23 @@
+
+
+.homepage-row {
+         columns: 2 200px;
+}
+
+.highlight {
+    color: var(--shefesh-complement);
+    font-weight: bold;
+}
+
+.highlight-alternative {
+    font-weight: bold;
+}
+
+.highlight-alternative-2 {
+    color: var(--shefesh-accent);
+    font-weight: bold;
+}
+
+#shefesh-homepage-logo {
+ max-width: 80%;
+}
