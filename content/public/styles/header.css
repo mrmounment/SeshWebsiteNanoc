@@ -18,9 +18,13 @@
 
 .menuLink, .menuLinkMain{
     display: inline-block;
-    background-color: rgb(18, 138, 251);
+    background-color: var(--header-background);
     border-radius: 5px;
-    padding: 10,10,10,10;
+    padding: 10px 10px 10px 10px;
+}
+
+.menuLink, .menuLinkMain:hover{
+    background-color: #1C1E29;
 }
 
 .menuLink a{
@@ -35,24 +39,16 @@
     position: relative;
 }
 
-#Careers:hover{
-    #careerHide{
+#Careers:hover, #Wiki:hover{
+    #careerHide, #wikiHide{
         display: block;
         position: absolute;
-        /* not sure why this works but using left sends it way off to right -JR */
-        right: -33px;
+        z-index: 1;
         li {display: block;}
     }
-}
 
-#Wiki:hover{
-    #wikiHide{
-        display: block;
-        position: absolute;
-        /* ditto as above */
-        right: -52px;
-        li {display: block;}
-    }
+    #careerHide{right: -36px;}
+    #wikiHide{right: -62px;}
 }
 
 @media (pointer: coarse){
@@ -69,7 +65,7 @@
         #careerHide{
             display: block;
             position: absolute;
-            right: -33px;
+            left: 0;
             li {display: block;}
         }
     }
@@ -97,6 +93,14 @@
             display: block;
             margin: 10px 10px 10px 10px;
         }
+    }
+
+    #careerHide{
+        right: -102px;
+    }
+
+    #wikiHide{
+        right: -62px;
     }
 
 }
