@@ -8,6 +8,12 @@
     padding-bottom: 0.2em
 }
 
+#logo{
+    max-width: 85px;
+    max-height: 85px;
+    padding-right: 10px;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -19,6 +25,7 @@
 .menuLink, .menuLinkMain{
     display: inline-block;
     background-color: var(--header-background);
+    color: var(--shefesh-complement);
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
 }
@@ -47,8 +54,8 @@
         li {display: block;}
     }
 
-    #careerHide{right: -36px;}
-    #wikiHide{right: -62px;}
+    #careerHide{right: -36px !important;}
+    #wikiHide{right: -62px !important;}
 }
 
 @media (pointer: coarse){
@@ -96,11 +103,13 @@
     }
 
     #careerHide{
-        right: -102px;
+        position: absolute;
+        left: -80px;
     }
 
     #wikiHide{
-        right: -62px;
+        position: absolute;
+        left: -100px;
     }
 
 }
