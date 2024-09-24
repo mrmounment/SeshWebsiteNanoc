@@ -4,14 +4,15 @@
 </div>
 <div id="nav" class="container">
     <ul>
-        <li class="menuLink"><a href="/" id="Home">Home</a></li>
-        <li class="menuLink"><a href="/sessions" id="Sessions">Sessions</a></li>
-        <li class="menuLink"><a href="/committee" id="Committee">Committee</a></li>
-        <li class="menuLink"><a href="/contact" id="Contact">Contact</a></li>
-        <li class="menuLink"><a href="/join-us" id="Join-Us">Join Us!</a></li>
+        <li class="menuLinkMain"><a href="/" id="Home">Home</a></li>
+        <li class="menuLinkMain"><a href="/sessions" id="Sessions">Sessions</a></li>
+        <li class="menuLinkMain"><a href="/committee" id="Committee">Committee</a></li>
+        <li class="menuLinkMain"><a href="/contact" id="Contact">Contact</a></li>
+        <li class="menuLinkMain"><a href="/join-us" id="Join-Us">Join Us!</a></li>
 
-        <li id="Careers" class="menuLink">
-            <a class="hoverItem">Careers</a>
+        <li id="Careers" class="menuLinkMain">
+            <input type="checkbox" id="career-click-box" hidden>
+            <label for="career-click-box"><a class="hoverItem">Careers</a></label>
             <div id="careerHide" class="HoverHidden">
                 <ul>
                     <li class="menuLink"><a href="/careers" id="Careers-Home">Careers</a></li>
@@ -20,8 +21,9 @@
             </div>
         </li>
 
-        <li id="Wiki" class="menuLink">
-            <a class="hoverItem">Wiki</a>
+        <li id="Wiki" class="menuLinkMain">
+            <input type="checkbox" id="wiki-click-box" hidden>
+            <label for="wiki-click-box"><a class="hoverItem">Wiki</a></label>
             <div id="wikiHide" class="HoverHidden">
                 <ul>
                     <li class="menuLink"><a href="/wiki" id="Wiki-Home">Wiki Home</a></li>

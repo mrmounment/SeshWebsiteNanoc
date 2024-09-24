@@ -1,11 +1,22 @@
 .HoverHidden{display: none;}
 
+#nav{
+    width: 80%;
+    padding: 0 10% 0 10%;
+    margin: 0;
+    border: 0;
+    padding-bottom: 0.2em
+}
+
 .container{
     display: flex;
     justify-content: center;
+    background-color: var(--header-background);
+    color: var(--header-text);
+    font: var(--standard-font);
 }
 
-.menuLink{
+.menuLink, .menuLinkMain{
     display: inline-block;
     background-color: rgb(18, 138, 251);
     border-radius: 5px;
@@ -45,7 +56,36 @@
 }
 
 @media (pointer: coarse){
-    .HoverHidden{display: block;}
+
+    #career-click-box:not(:checked) ~ #careerHide{
+        display: none;
+    }
+    #wiki-click-box:not(:checked) ~ #wikiHide{
+        display: none;
+    }
+
+    #career-click-box:checked + label{
+        #Careers {display:none;}
+        #careerHide{
+            display: block;
+            position: absolute;
+            right: -33px;
+            li {display: block;}
+        }
+    }
+
+    #wiki-click-box:checked + label{
+        #Wiki {display:none;}
+        #wikiHide{
+            display: block;
+            position: absolute;
+            right: -33px;
+            li {display: block;}
+        }
+    }
+
+
+
 }
 
 /* changing nav menu to mobile version */
@@ -53,6 +93,10 @@
     #nav{
         text-align: center;
         justify-content: center;
+        .menuLinkMain {
+            display: block;
+            margin: 10px 10px 10px 10px;
+        }
     }
 
 }
