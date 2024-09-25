@@ -1,19 +1,112 @@
 .HoverHidden{display: none;}
 
-#nav li{
+
+#nav{
+    width: 80%;
+    padding: 0 10% 0 10%;
+    margin: 0;
+    border: 0;
+    padding-bottom: 0.2em
+}
+
+#logo{
+    max-width: 85px;
+    max-height: 85px;
+    padding-right: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--header-background);
+    color: var(--header-text);
+    font: var(--standard-font);
+}
+
+.menu-link, .menu-link-main{
     display: inline-block;
+    background-color: var(--header-background);
+    color: var(--shefesh-complement);
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
 }
 
-#Careers:hover{
-    #careerHide{display: block;}
+.menu-link, .menu-link-main:hover{
+    background-color: #1C1E29;
 }
 
-#Wiki:hover{
-    #wikiHide{display: block;}
+.menu-link a{
+    display: block;
+}
+
+#wiki{
+    position: relative;
+}
+
+#Careers{
+    position: relative;
+}
+
+.fa-bars{
+    font-size: 36px;
+}
+
+#ham-icon{
+    padding-left: 45px;
+}
+
+#hamburger{
+    justify-content: center;
+    text-align: center;
+}
+
+#nav-label{
+    display: none;
+}
+
+#Careers:hover, #wiki:hover{
+    #career-hide, #wiki-hide{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        li {display: block;}
+    }
+
+    #career-hide{right: -36px !important;}
+    #wiki-hide{right: -62px !important;}
 }
 
 @media (pointer: coarse){
-    .HoverHidden{display: block;}
+
+    #career-click-box:not(:checked) ~ #career-hide{
+        display: none;
+    }
+    #wiki-click-box:not(:checked) ~ #wiki-hide{
+        display: none;
+    }
+
+    #career-click-box:checked + label{
+        #Careers {display:none;}
+        #career-hide{
+            display: block;
+            position: absolute;
+            left: 0;
+            li {display: block;}
+        }
+    }
+
+    #wiki-click-box:checked + label{
+        #wiki {display:none;}
+        #wiki-hide{
+            display: block;
+            position: absolute;
+            right: -33px;
+            li {display: block;}
+        }
+    }
+
+
+
 }
 
 /* changing nav menu to mobile version */
@@ -21,6 +114,42 @@
     #nav{
         text-align: center;
         justify-content: center;
+        .menu-link-main {
+            display: block;
+            margin: 10px 10px 10px 10px;
+        }
+    }
+
+    #career-hide{
+        position: absolute;
+        left: -80px;
+    }
+
+    #wiki-hide{
+        position: absolute;
+        left: -100px;
+    }
+
+    #hamburger{
+        display: block;
+        position: relative;
+    }
+
+    #nav-label{
+        display: block;
+    }
+
+
+    #nav-click-box:checked ~ #nav{
+        display: block;
+    }
+
+    #nav{
+        display: none;
+    }
+
+    #nav-click-box:not(:checked) ~ #nav{
+        display: none;
     }
 
 }
