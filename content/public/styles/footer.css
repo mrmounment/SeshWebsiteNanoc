@@ -26,5 +26,6 @@ footer>a {
 }
 
 footer>a>img {
-    max-height: 7rem;
+    height: 7rem;
+    margin-left: calc(calc(100% - 7rem) / 2);
 }
