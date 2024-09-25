@@ -1,5 +1,6 @@
 .HoverHidden{display: none;}
 
+
 #nav{
     width: 80%;
     padding: 0 10% 0 10%;
@@ -57,6 +58,10 @@
 #hamburger{
     justify-content: center;
     text-align: center;
+}
+
+#nav-label{
+    display: none;
 }
 
 #Careers:hover, #Wiki:hover{
@@ -123,6 +128,28 @@
     #wikiHide{
         position: absolute;
         left: -100px;
+    }
+
+    #hamburger{
+        display: block;
+        position: relative;
+    }
+
+    #nav-label{
+        display: block;
+    }
+
+
+    #nav-click-box:checked ~ #nav{
+        display: block;
+    }
+
+    #nav{
+        display: none;
+    }
+
+    #nav-click-box:not(:checked) ~ #nav{
+        display: none;
     }
 
 }
