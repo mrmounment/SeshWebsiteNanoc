@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-background);
+    color: var(--header-text);
+    padding: 24px;
+}
+
+footer>p {
+    flex-grow: 3;
+    text-align: center;
+}
+
+footer>ul {
+    flex-grow: 2;
+    text-align: center;
+    list-style-type: none;
+    padding: 0px;
+}
+
+footer>a {
+    flex-grow: 2;
+}
+
+footer>a>img {
+    max-height: 10rem;
+}
