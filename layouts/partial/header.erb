@@ -17,14 +17,17 @@
 
             <li id="wiki" class="menu-link-main">
                 <input type="checkbox" id="wiki-click-box" hidden>
-                <label for="wiki-click-box"><a class="hoverItem">Wiki</a></label>
+                <label for="wiki-click-box"><a class="hoverItem" href="/wiki">Wiki</a></label>
                 <div id="wiki-hide" class="HoverHidden">
                     <ul>
-                        <li class="menu-link"><a href="/wiki" id="wiki-home">Wiki Home</a></li>
-                        <li class="menu-link"><a href="/wiki/fundamental-skills" id="fundamental-skills">Fundamental Skills</a></li>
-                        <li class="menu-link"><a href="/wiki/worksheets" id="worksheets">Worksheets</a></li>
-                        <li class="menu-link"><a href="/wiki/resources" id="resources">Resources</a></li>
-                        <li class="menu-link"><a href="/wiki/virtual-machine" id="virtual-machine">Virtual Machine</a></li>
+                        <% Dir.children("content/wiki").sort.each do |child| %>
+                            <% next if child.end_with? 'index.md' %>
+                            <li class="menu-link">
+                                <a href="/wiki/<%= File.basename(child, '.md')%>">
+                                    <%= wiki_title_from_name child %>
+                                </a>
+                            </li>
+                        <% end %>
                     </ul>
                 </div>
             </li>
