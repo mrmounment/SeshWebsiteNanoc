@@ -68,7 +68,7 @@ nav.wiki-sidenav img {
     margin: auto;
 }
 
-main article {
+main div.article {
     grid-area: a;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -79,7 +79,7 @@ main article {
     overflow: auto;
 }
 
-main article hgroup {
+main div.article hgroup {
     margin-top: 36px;
 }
 
@@ -91,7 +91,7 @@ nav.wiki-breadcrumb-trail {
     color: var(--shefesh-grey)
 }
 
-main article h1 {
+main div.article h1 {
     font-size: 2em;
     margin-top: 0px;
 }
@@ -160,6 +160,10 @@ pre {
 }
 
 @media print {
+    header {
+        break-after: avoid-page;
+    }
+
     a {
         text-decoration: none;
         font-weight: bold;
@@ -180,16 +184,21 @@ pre {
         text-align: justify;
     }
 
+
+
     header * {
         margin: unset;
     }
 
-    main article {
+    main div.article {
         margin-top: unset;
         margin-bottom: unset;
         padding: unset;
         border-radius: unset;
         border-bottom: 3px solid var(--shefesh-complement);
+    }
+
+    main {
         page-break-before: avoid;
     }
 
@@ -197,7 +206,7 @@ pre {
         page-break-after: avoid;
     }
 
-    header ul {
+    header #hamburger {
         display: none;
     }
 
