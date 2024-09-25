@@ -23,7 +23,7 @@
     font: var(--standard-font);
 }
 
-.menuLink, .menuLinkMain{
+.menu-link, .menu-link-main{
     display: inline-block;
     background-color: var(--header-background);
     color: var(--shefesh-complement);
@@ -31,15 +31,15 @@
     padding: 10px 10px 10px 10px;
 }
 
-.menuLink, .menuLinkMain:hover{
+.menu-link, .menu-link-main:hover{
     background-color: #1C1E29;
 }
 
-.menuLink a{
+.menu-link a{
     display: block;
 }
 
-#Wiki{
+#wiki{
     position: relative;
 }
 
@@ -64,30 +64,30 @@
     display: none;
 }
 
-#Careers:hover, #Wiki:hover{
-    #careerHide, #wikiHide{
+#Careers:hover, #wiki:hover{
+    #career-hide, #wiki-hide{
         display: block;
         position: absolute;
         z-index: 1;
         li {display: block;}
     }
 
-    #careerHide{right: -36px !important;}
-    #wikiHide{right: -62px !important;}
+    #career-hide{right: -36px !important;}
+    #wiki-hide{right: -62px !important;}
 }
 
 @media (pointer: coarse){
 
-    #career-click-box:not(:checked) ~ #careerHide{
+    #career-click-box:not(:checked) ~ #career-hide{
         display: none;
     }
-    #wiki-click-box:not(:checked) ~ #wikiHide{
+    #wiki-click-box:not(:checked) ~ #wiki-hide{
         display: none;
     }
 
     #career-click-box:checked + label{
         #Careers {display:none;}
-        #careerHide{
+        #career-hide{
             display: block;
             position: absolute;
             left: 0;
@@ -96,8 +96,8 @@
     }
 
     #wiki-click-box:checked + label{
-        #Wiki {display:none;}
-        #wikiHide{
+        #wiki {display:none;}
+        #wiki-hide{
             display: block;
             position: absolute;
             right: -33px;
@@ -114,18 +114,18 @@
     #nav{
         text-align: center;
         justify-content: center;
-        .menuLinkMain {
+        .menu-link-main {
             display: block;
             margin: 10px 10px 10px 10px;
         }
     }
 
-    #careerHide{
+    #career-hide{
         position: absolute;
         left: -80px;
     }
 
-    #wikiHide{
+    #wiki-hide{
         position: absolute;
         left: -100px;
     }
