@@ -3,3 +3,4 @@ vendor/
 output/
 tmp/
 crash.log
+Gemfile.lock
