@@ -158,3 +158,50 @@ pre {
     padding: 16px;
     font-size: 1.1em;
 }
+
+@media print {
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        color: black !important;
+        margin-top: 0.6rem;
+
+    }
+
+    header img {
+        height: 3rem;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    header * {
+        margin: unset;
+    }
+
+    main article {
+        margin-top: unset;
+        margin-bottom: unset;
+        padding: unset;
+        border-radius: unset;
+        border-bottom: 3px solid var(--shefesh-complement);
+        page-break-before: avoid;
+    }
+
+    header {
+        page-break-after: avoid;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    nav.wiki-sidenav {
+        display: none;
+    }
+}
