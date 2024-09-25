@@ -21,3 +21,7 @@
 #shefesh-homepage-logo {
  max-width: 80%;
 }
+
+hr {
+    background-color: var(--shefesh-accent)
+}

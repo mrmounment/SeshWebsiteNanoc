@@ -1,12 +1,14 @@
 ---
-title: GIAG - Introduction to Hacking - PGT
-building: north-campus
-room: Computer Room
-presenter: James
-date: 2023-09-22
-time: "18:00 - 19:30"
-depends: []
-difficulty: 1
+title: PG-GIAG - Introduction to Hacking
+date: 2024-09-24
+start-time: "10:00"
+end-time: "12:00"
+presenter: Echo
+room: "Computer Room 2 2"
+building: the-diamond
+difficulty: B
 ---
 
-We are looking forward to seeing some of you at our PGT Give It a Go session.
+Exclusive session for Post Grad cyber security and AI students.
+
+A brief intro to ShefESH, who we are, what we do, and a bit about encryption, encodings, and web hacking. This is an intro session to show how our regular ShefESH sessions work, and we will look at everything we cover in more detail throughout the year.
