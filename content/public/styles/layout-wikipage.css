@@ -1,8 +1,16 @@
 body {
     margin: 0px;
-}   
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > :not(main) {
+    flex-grow: 0;
+}
 
 main {
+    flex-grow: 1;
     display: grid;
     grid-template-areas:
         "a"
