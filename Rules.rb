@@ -18,7 +18,7 @@ end
 compile '/basic_pages/404.md' do
   filter :kramdown
   layout "/basic.erb"
-  write "/404/.html"         
+  write "/404.html"         
 end
 
 
