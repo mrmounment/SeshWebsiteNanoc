@@ -1,5 +1,12 @@
 body {
     margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > :not(main) {
+    flex-grow: 0;
 }
 
 main {
@@ -9,6 +16,7 @@ main {
     border-right: 3px solid var(--shefesh-accent);
     padding: 32px;
     max-width: 160ch;
+    flex-grow: 1;
 }
 
 :is(h2, h3, h4, h5, h6) {

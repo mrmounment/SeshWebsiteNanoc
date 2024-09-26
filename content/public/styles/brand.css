@@ -23,7 +23,7 @@
 
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
     :root {
         --shefesh-accent: #FC83A1;
         --shefesh-text-on-accent: black;
@@ -33,6 +33,25 @@
 
         --card-background: #33354b;
         --card-text: white;
+    }
+}
+
+@media print {
+    :root {
+        --shefesh-complement: #3b3b3b;
+        --shefesh-text-on-complement: white;
+    
+        --shefesh-accent: black;
+        --shefesh-text-on-accent: white;
+    
+        --body-background: white;
+        --body-text: black;
+    
+        --card-background: white;
+        --card-text: black;
+    
+        --header-background: white;
+        --header-text: black;    
     }
 }
 
