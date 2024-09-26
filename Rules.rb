@@ -15,6 +15,13 @@ compile '/basic_pages/index.erb' do
   write "/index.html"
 end
 
+compile '/basic_pages/404.md' do
+  filter :kramdown
+  layout "/basic.erb"
+  write "/404/index.html"
+end
+
+
 compile '/basic_pages/contact.erb' do
   file_name = File.basename(item.identifier,File.extname(item.identifier))
   filter :erb
