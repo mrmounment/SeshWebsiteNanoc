@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="/syntax/rouge.css">
+    <script src="https://kit.fontawesome.com/e5e76d9839.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <%= render "/partial/header.erb" %>
     </header>
-    </a>
     <main>
         <nav class="wiki-sidenav">
             <a href="/wiki">
@@ -30,7 +30,7 @@
         </nav>
         <div class="article">
             <hgroup>
-                <nav class="wiki-breadcrumb-trail">
+                <p class="wiki-breadcrumb-trail">
                     <% cumulative_filename = "/wiki/" %>
                     <% @item.identifier.components[1..-2].each do |filename| %>
                         <% cumulative_filename += filename + "/" %>
@@ -38,11 +38,11 @@
                         <span class="breadcrumb-trail-separator">/<span>
                     <% end %>
 
-                </nav>
+                </p>
                 <h1><%= wiki_title_from_name @item.identifier %></h1>
             </hgroup>
             <%= yield %>
-        </article>
+        </div>
     </main>
     <footer>
     <%= render "/partial/footer.erb" %>
