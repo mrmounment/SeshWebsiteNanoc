@@ -15,7 +15,3 @@ gem 'kramdown'
 gem "rouge"
 gem 'erb'
 gem "rexml", ">= 3.3.6"
-gem 'capybara'
-gem 'rack-test'
-gem 'rackup', '~> 2.1'
-gem 'rspec'
