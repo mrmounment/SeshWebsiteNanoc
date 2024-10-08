@@ -78,6 +78,7 @@
 
 .session-chips {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: stretch;
     gap: 4px;
@@ -92,24 +93,15 @@
     font-family: var(--condensed-font);
     padding: 8px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 4px;
+    flex-grow: 1;
+    border-radius: 4px;
 }
 
 .session-chips li a {
     color: white;
 }
-
-.session-chips li:first-child {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
-.session-chips li:last-child {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-
 .session-card h3 {
     display: flex;
     justify-content: left;
