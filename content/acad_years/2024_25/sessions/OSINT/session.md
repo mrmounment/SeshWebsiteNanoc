@@ -1,6 +1,6 @@
 ---
 title: OSINT
-date: 2024-19-14
+date: 2024-10-14
 start-time: "18:00"
 end-time: "19:30"
 presenter: Luca
