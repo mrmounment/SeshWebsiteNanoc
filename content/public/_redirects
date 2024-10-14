@@ -1,17 +1,22 @@
 # For convenient short links
 /conduct /wiki/About_the_Society/Code_of_Conduct/ 302
 /kalivm /wiki/Fundamental_Skills/Linux/1._Installing_Kali_Linux_in_a_Virtual_Machine/ 302
-/join https://su.sheffield.ac.uk/activities/view/ethical-student-hackers-society 302
+/join https://su.sheffield.ac.uk/shop?activity_id=287 302
+/discord https://discord.gg/rhfnwgphdx 302
+/qr /join 302
+/cardqr /conduct 302
+
 
 # Resources merged into new "Useful Links" section
 /wiki/resources /wiki/Useful_Links 301
 
 # "Worksheets" section is gone because we never used it. Redirect to the few sessions that did have worksheets
-/wiki/worksheets /sessions/#acad-year-2020_21 301
+/wiki/worksheets "/sessions/#acad-year-2020_21" 301
 
 # Fundamental Skills moved to the wiki rather than a set of PDFs
 /wiki/fundamental-skills/ /wiki/Fundamental_Skills 301
-/wiki/fundamental-skills/web-1---inspecting-a-webpage.pdf /wiki/Fundamental_Skills/Web/1._Inspecting_a_Webpage/ 301iki/fundamental-skills/web-2---understanding-http-requests.pdf /wiki/Fundamental_Skills/Web/2._Understanding_HTTP_Requests 301
+/wiki/fundamental-skills/web-1---inspecting-a-webpage.pdf /wiki/Fundamental_Skills/Web/1._Inspecting_a_Webpage/ 301
+/wiki/fundamental-skills/web-2---understanding-http-requests.pdf /wiki/Fundamental_Skills/Web/2._Understanding_HTTP_Requests 301
 /wiki/fundamental-skills/web-3---burp-suite.pdf /wiki/Fundamental_Skills/Web/3._Using_Burp_Suite 301
 /wiki/fundamental-skills/tools-1---curl.pdf /wiki/Fundamental_Skills/Web/4._Using_CURL 301
 /wiki/fundamental-skills/linux-1---navigating-the-file-system.pdf /wiki/Fundamental_Skills/Linux/3._Navigating_the_File_System 301

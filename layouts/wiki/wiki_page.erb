@@ -6,17 +6,19 @@
     <title><%= wiki_title_from_name @item.identifier %> - ShefESH Wiki</title>
     <link rel="stylesheet" href="/styles/brand.css">
     <link rel="stylesheet" href="/styles/layout-wikipage.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="/syntax/rouge.css">
+    <script src="https://kit.fontawesome.com/e5e76d9839.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <%= render "/partial/header.erb" %>
     </header>
-    </a>
     <main>
         <nav class="wiki-sidenav">
             <a href="/wiki">
-                <img src="/logos/Wiki.png" alt="ShefESH Wiki">
+                <img id="main-wiki-logo" src="/logos/Wiki.png" alt="ShefESH Wiki">
             </a>
             <% one_section_up = @item.identifier.components[1..(@item.identifier.to_s.match?(/index\.md$/) ? -3 : -2)] %>
             <h2>Edit page</h2>
@@ -26,9 +28,9 @@
             <h2>Pages in "<%= wiki_title_from_name((one_section_up[-1] or "/")) %>"</h2>
             <%= wiki_list_section((one_section_up or "/")) %>
         </nav>
-        <article>
+        <div class="article">
             <hgroup>
-                <nav class="wiki-breadcrumb-trail">
+                <p class="wiki-breadcrumb-trail">
                     <% cumulative_filename = "/wiki/" %>
                     <% @item.identifier.components[1..-2].each do |filename| %>
                         <% cumulative_filename += filename + "/" %>
@@ -36,11 +38,11 @@
                         <span class="breadcrumb-trail-separator">/<span>
                     <% end %>
 
-                </nav>
+                </p>
                 <h1><%= wiki_title_from_name @item.identifier %></h1>
             </hgroup>
             <%= yield %>
-        </article>
+        </div>
     </main>
     <footer>
     <%= render "/partial/footer.erb" %>
