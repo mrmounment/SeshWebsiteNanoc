@@ -1,9 +1,9 @@
 ---
 id: erik
-role: General Member
+role: Competitions Officer
 priority: 2
 name: Erik
-bio: Erik is a 1st year Software Engineering student.
+bio: After organizing a trip to the first international uni CTF of its kind in London last year, I ran and was elected to be Competitions Officer this year.
 image: erik.png
 contact: Contact him on 
 contact-name: linkedin.png 
